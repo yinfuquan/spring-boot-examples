@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yin.springboot.user.center.mapper.OauthAccessTokenMapper">
+  <resultMap id="BaseResultMap" type="com.yin.springboot.user.center.domain.OauthAccessToken">
+    <!--@mbg.generated generated on Thu Jul 11 11:29:40 CST 2019.-->
+    <id column="authentication_id" jdbcType="VARCHAR" property="authenticationId" />
+    <result column="token_id" jdbcType="VARCHAR" property="tokenId" />
+    <result column="token" jdbcType="BLOB" property="token" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="client_id" jdbcType="VARCHAR" property="clientId" />
+    <result column="authentication" jdbcType="BLOB" property="authentication" />
+    <result column="refresh_token" jdbcType="VARCHAR" property="refreshToken" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Thu Jul 11 11:29:40 CST 2019.-->
+    authentication_id, token_id, token, user_name, client_id, authentication, refresh_token
+  </sql>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated generated on Thu Jul 11 11:29:40 CST 2019.-->
+    update oauth_access_token
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="token_id = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when authentication_id = #{item.authenticationId,jdbcType=VARCHAR} then #{item.tokenId,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="token = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when authentication_id = #{item.authenticationId,jdbcType=VARCHAR} then #{item.token,jdbcType=BLOB}
+        </foreach>
+      </trim>
+      <trim prefix="user_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when authentication_id = #{item.authenticationId,jdbcType=VARCHAR} then #{item.userName,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="client_id = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when authentication_id = #{item.authenticationId,jdbcType=VARCHAR} then #{item.clientId,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="authentication = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when authentication_id = #{item.authenticationId,jdbcType=VARCHAR} then #{item.authentication,jdbcType=BLOB}
+        </foreach>
+      </trim>
+      <trim prefix="refresh_token = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when authentication_id = #{item.authenticationId,jdbcType=VARCHAR} then #{item.refreshToken,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+    </trim>
+    where authentication_id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.authenticationId,jdbcType=VARCHAR}
+    </foreach>
+  </update>
+  <insert id="batchInsert" parameterType="map">
+    <!--@mbg.generated generated on Thu Jul 11 11:29:40 CST 2019.-->
+    insert into oauth_access_token
+    (authentication_id, token_id, token, user_name, client_id, authentication, refresh_token
+      )
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.authenticationId,jdbcType=VARCHAR}, #{item.tokenId,jdbcType=VARCHAR}, #{item.token,jdbcType=BLOB}, 
+        #{item.userName,jdbcType=VARCHAR}, #{item.clientId,jdbcType=VARCHAR}, #{item.authentication,jdbcType=BLOB}, 
+        #{item.refreshToken,jdbcType=VARCHAR})
+    </foreach>
+  </insert>
+  <insert id="insertOrUpdate" parameterType="com.yin.springboot.user.center.domain.OauthAccessToken">
+    <!--@mbg.generated generated on Thu Jul 11 11:29:40 CST 2019.-->
+    insert into oauth_access_token
+    (authentication_id, token_id, token, user_name, client_id, authentication, refresh_token
+      )
+    values
+    (#{authenticationId,jdbcType=VARCHAR}, #{tokenId,jdbcType=VARCHAR}, #{token,jdbcType=BLOB}, 
+      #{userName,jdbcType=VARCHAR}, #{clientId,jdbcType=VARCHAR}, #{authentication,jdbcType=BLOB}, 
+      #{refreshToken,jdbcType=VARCHAR})
+    on duplicate key update 
+    authentication_id = #{authenticationId,jdbcType=VARCHAR}, 
+    token_id = #{tokenId,jdbcType=VARCHAR}, 
+    token = #{token,jdbcType=BLOB}, 
+    user_name = #{userName,jdbcType=VARCHAR}, 
+    client_id = #{clientId,jdbcType=VARCHAR}, 
+    authentication = #{authentication,jdbcType=BLOB}, 
+    refresh_token = #{refreshToken,jdbcType=VARCHAR}
+  </insert>
+  <insert id="insertOrUpdateSelective" parameterType="com.yin.springboot.user.center.domain.OauthAccessToken">
+    <!--@mbg.generated generated on Thu Jul 11 11:29:40 CST 2019.-->
+    insert into oauth_access_token
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="authenticationId != null">
+        authentication_id,
+      </if>
+      <if test="tokenId != null">
+        token_id,
+      </if>
+      <if test="token != null">
+        token,
+      </if>
+      <if test="userName != null">
+        user_name,
+      </if>
+      <if test="clientId != null">
+        client_id,
+      </if>
+      <if test="authentication != null">
+        authentication,
+      </if>
+      <if test="refreshToken != null">
+        refresh_token,
+      </if>
+    </trim>
+    values
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="authenticationId != null">
+        #{authenticationId,jdbcType=VARCHAR},
+      </if>
+      <if test="tokenId != null">
+        #{tokenId,jdbcType=VARCHAR},
+      </if>
+      <if test="token != null">
+        #{token,jdbcType=BLOB},
+      </if>
+      <if test="userName != null">
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="clientId != null">
+        #{clientId,jdbcType=VARCHAR},
+      </if>
+      <if test="authentication != null">
+        #{authentication,jdbcType=BLOB},
+      </if>
+      <if test="refreshToken != null">
+        #{refreshToken,jdbcType=VARCHAR},
+      </if>
+    </trim>
+    on duplicate key update 
+    <trim suffixOverrides=",">
+      <if test="authenticationId != null">
+        authentication_id = #{authenticationId,jdbcType=VARCHAR},
+      </if>
+      <if test="tokenId != null">
+        token_id = #{tokenId,jdbcType=VARCHAR},
+      </if>
+      <if test="token != null">
+        token = #{token,jdbcType=BLOB},
+      </if>
+      <if test="userName != null">
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="clientId != null">
+        client_id = #{clientId,jdbcType=VARCHAR},
+      </if>
+      <if test="authentication != null">
+        authentication = #{authentication,jdbcType=BLOB},
+      </if>
+      <if test="refreshToken != null">
+        refresh_token = #{refreshToken,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>

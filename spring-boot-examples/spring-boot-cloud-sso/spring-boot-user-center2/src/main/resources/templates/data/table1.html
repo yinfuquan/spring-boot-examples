@@ -1,0 +1,291 @@
+<div class="fastui-content-style">
+    <table class="layui-hide" id="fastui-tooltable" lay-filter="fastui-tooltable"></table>
+</div>
+
+<script type="text/html" id="toolbarDemo">
+    <div class="layui-row">
+        <div class="fastui-toolbar-btn">
+            <div class="layui-row">
+                <button class="layui-btn layui-btn-normal fastui-btn-slide left"><i
+                        class="layui-icon">&#xe615;</i>搜索<span class="layui-badge fastui-badge">1</span></button>
+                <button class="layui-btn  layui-btn-normal right"><i class="layui-icon">&#xe654;</i>添加</button>
+                <div class="layui-btn-group right" style="margin-right: 8px;">
+                    <button class="layui-btn fastui-btn fastui-btn-blue"><i class="layui-icon">&#xe654;</i>增加</button>
+                    <button class="layui-btn fastui-btn fastui-btn-org"><i class="layui-icon">&#xe642;</i>编辑</button>
+                    <button class="layui-btn fastui-btn fastui-btn-warn"><i class="layui-icon">&#xe60a;</i>查看</button>
+                    <button class="layui-btn fastui-btn fastui-btn-green">
+                        设置<i class="layui-icon">&#xe625;</i>
+                        <ul class="fastui-btn-down">
+                            <li><a href="#">下拉</a></li>
+                            <li><a href="#">菜单</a></li>
+                            <li><a href="#">设置</a></li>
+                        </ul>
+                    </button>
+                </div>
+            </div>
+            <div class="fastui-seacher-up layui-row">
+                <div class="fastui-seacher-hide">点击收起<i class="layui-icon">&#xe619;</i></div>
+                <form class="layui-form">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">搜索框:</label>
+                        <div class="layui-input-block">
+                            <ul class="fastui-seacher-ullist">
+                                <li><a href="#">全部</a></li>
+                                <li><a class="fastui-this" href="#">未开课</a></li>
+                                <li><a href="#">已开课</a></li>
+                                <li><a href="#">未开班</a></li>
+                                <li><a href="#">已开班</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">客户来源:</label>
+                        <div class="layui-input-block">
+                            <ul class="fastui-seacher-ullist">
+                                <li><a class="fastui-this" href="#">全部</a></li>
+                                <li><a href="#">地推</a></li>
+                                <li><a href="#">网络</a></li>
+                                <li><a href="#">渠道</a></li>
+                                <li><a href="#">转介绍</a></li>
+                                <li><a href="#">直访</a></li>
+                                <li><a href="#">拉访</a></li>
+                                <li><a href="#">来电</a></li>
+                                <li><a href="#">收购</a></li>
+                                <li><a href="#">团购</a></li>
+                                <li><a href="#">其他</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">星期多选:</label>
+                            <div class="layui-input-block">
+                                <input type="checkbox" name="" lay-skin="primary" title="周一">
+                                <input type="checkbox" name="" lay-skin="primary" title="周二">
+                                <input type="checkbox" name="" lay-skin="primary" title="周三">
+                                <input type="checkbox" name="" lay-skin="primary" title="周四" checked="">
+                                <input type="checkbox" name="" lay-skin="primary" title="周五">
+                                <input type="checkbox" name="" lay-skin="primary" title="周六">
+                                <input type="checkbox" name="" lay-skin="primary" title="周日" checked="">
+                                <input type="checkbox" name="" lay-skin="primary" title="全部">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">搜索框:</label>
+                            <div class="layui-input-block">
+                                <div class="layui-input-inline" style="width: 115px;">
+                                    <input type="text" name="phone" lay-verify="phone" autocomplete="off"
+                                           placeholder="请搜索手机号" class="layui-input">
+                                </div>
+                                <div class="layui-input-inline" style="width: 180px;">
+                                    <input type="text" name="identity" lay-verify="identity" autocomplete="off"
+                                           placeholder="请搜索身份证号" class="layui-input">
+                                </div>
+                                <div class="layui-input-inline">
+                                    <input class="layui-input" type="text" name="title" value="" autocomplete="off"
+                                           placeholder="请输入校区名称"/>
+                                </div>
+                                <div class="layui-input-inline">
+                                    <select>
+                                        <option value="">请选择状态</option>
+                                        <option value="杭州">杭州</option>
+                                        <option value="温州">温州</option>
+                                        <option value="温州">台州</option>
+                                        <option value="温州">绍兴</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">日期:</label>
+                            <div class="layui-input-block">
+                                <div class="layui-input-inline" style="width: 115px;">
+                                    <input class="layui-input" type="text" id="fastui-seacher-date" name=""
+                                           autocomplete="off" placeholder="请搜索日期" value=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">日期范围:</label>
+                        <div class="layui-input-block">
+                            <div class="layui-input-inline" style="width: 200px;">
+                                <input class="layui-input" type="text" id="fastui-seacher-date1" name=""
+                                       autocomplete="off" placeholder="请搜索日期" value=""/>
+                            </div>
+                            <div class="layui-input-inline">
+                                <button class="layui-btn fastui-btn">查询</button>
+                                <button class="layui-btn layui-btn-primary">重置</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="fastui-toolbar">
+    <a lay-event="edit"><i class="layui-icon" style="color: #5582E9;">&#xe642;</i></a>
+    <a lay-event="del"><i class="layui-icon" style="color: #5582E9;">&#xe640;</i></a>
+</script>
+<script type="text/javascript">
+    layui.use(['jquery', 'table', 'form', 'laydate'], function () {
+        var $ = layui.jquery,
+            table = layui.table,
+            form = layui.form,
+            laydate = layui.laydate;
+        form.render();
+        laydate.render({
+            elem: '#fastui-seacher-date'
+        });
+        laydate.render({
+            elem: '#fastui-seacher-date1'
+            , range: true
+        })
+
+        table.render({
+            elem: '#fastui-tooltable'
+            , toolbar: '#toolbarDemo'
+            , size: 'sm'
+            , cellMinWidth: 80
+            , cols: [[
+                {type: 'checkbox', fixed: 'left'}
+                , {field: 'id', title: 'ID', width: 80}
+                , {field: 'username', title: '用户名'}
+                , {field: 'sex', title: '性别'}
+                , {field: 'city', title: '城市'}
+                , {field: 'sign', title: '签名'}
+                , {field: 'classify', title: '职业'}
+                , {field: 'experience', title: '积分'}
+                , {field: 'score', title: '评分'}
+                , {title: '操作', toolbar: '#fastui-toolbar'}
+            ]]
+            , data: [
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                }
+            ]
+            , page: true
+        });
+        //监听行工具事件
+        table.on('tool(fastui-tooltable)', function (obj) {
+            var data = obj.data;
+            if (obj.event === 'del') {
+                layer.confirm('真的删除行么', function (index) {
+                    obj.del();
+                    layer.close(index);
+                });
+            } else if (obj.event === 'edit') {
+                layer.prompt({
+                    formType: 2,
+                    value: data.city
+                }, function (value, index) {
+                    obj.update({
+                        city: value
+                    });
+                    layer.close(index);
+                });
+            }
+        });
+        $(".fastui-toolbar-btn .fastui-btn-slide").click(function () {
+            $(".fastui-seacher-up").stop().slideToggle(500);
+        })
+        $(".fastui-seacher-hide").click(function () {
+            $(".fastui-seacher-up").stop().slideUp(500);
+        })
+        $(".fastui-btn").click(function () {
+            $(this).find(".fastui-btn-down").slideToggle(500)
+        })
+    });
+</script>

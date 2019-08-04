@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yin.springboot.user.center.mapper.ClientdetailsMapper">
+  <resultMap id="BaseResultMap" type="com.yin.springboot.user.center.domain.Clientdetails">
+    <!--@mbg.generated generated on Thu Jul 11 11:29:40 CST 2019.-->
+    <id column="appId" jdbcType="VARCHAR" property="appid" />
+    <result column="resourceIds" jdbcType="VARCHAR" property="resourceids" />
+    <result column="appSecret" jdbcType="VARCHAR" property="appsecret" />
+    <result column="scope" jdbcType="VARCHAR" property="scope" />
+    <result column="grantTypes" jdbcType="VARCHAR" property="granttypes" />
+    <result column="redirectUrl" jdbcType="VARCHAR" property="redirecturl" />
+    <result column="authorities" jdbcType="VARCHAR" property="authorities" />
+    <result column="access_token_validity" jdbcType="INTEGER" property="accessTokenValidity" />
+    <result column="refresh_token_validity" jdbcType="INTEGER" property="refreshTokenValidity" />
+    <result column="additionalInformation" jdbcType="VARCHAR" property="additionalinformation" />
+    <result column="autoApproveScopes" jdbcType="VARCHAR" property="autoapprovescopes" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Thu Jul 11 11:29:40 CST 2019.-->
+    appId, resourceIds, appSecret, `scope`, grantTypes, redirectUrl, authorities, access_token_validity, 
+    refresh_token_validity, additionalInformation, autoApproveScopes
+  </sql>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated generated on Thu Jul 11 11:29:40 CST 2019.-->
+    update clientdetails
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="resourceIds = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when appId = #{item.appid,jdbcType=VARCHAR} then #{item.resourceids,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="appSecret = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when appId = #{item.appid,jdbcType=VARCHAR} then #{item.appsecret,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="`scope` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when appId = #{item.appid,jdbcType=VARCHAR} then #{item.scope,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="grantTypes = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when appId = #{item.appid,jdbcType=VARCHAR} then #{item.granttypes,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="redirectUrl = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when appId = #{item.appid,jdbcType=VARCHAR} then #{item.redirecturl,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="authorities = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when appId = #{item.appid,jdbcType=VARCHAR} then #{item.authorities,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="access_token_validity = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when appId = #{item.appid,jdbcType=VARCHAR} then #{item.accessTokenValidity,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="refresh_token_validity = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when appId = #{item.appid,jdbcType=VARCHAR} then #{item.refreshTokenValidity,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="additionalInformation = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when appId = #{item.appid,jdbcType=VARCHAR} then #{item.additionalinformation,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="autoApproveScopes = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when appId = #{item.appid,jdbcType=VARCHAR} then #{item.autoapprovescopes,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+    </trim>
+    where appId in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.appid,jdbcType=VARCHAR}
+    </foreach>
+  </update>
+  <insert id="batchInsert" parameterType="map">
+    <!--@mbg.generated generated on Thu Jul 11 11:29:40 CST 2019.-->
+    insert into clientdetails
+    (appId, resourceIds, appSecret, `scope`, grantTypes, redirectUrl, authorities, access_token_validity, 
+      refresh_token_validity, additionalInformation, autoApproveScopes)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.appid,jdbcType=VARCHAR}, #{item.resourceids,jdbcType=VARCHAR}, #{item.appsecret,jdbcType=VARCHAR}, 
+        #{item.scope,jdbcType=VARCHAR}, #{item.granttypes,jdbcType=VARCHAR}, #{item.redirecturl,jdbcType=VARCHAR}, 
+        #{item.authorities,jdbcType=VARCHAR}, #{item.accessTokenValidity,jdbcType=INTEGER}, 
+        #{item.refreshTokenValidity,jdbcType=INTEGER}, #{item.additionalinformation,jdbcType=VARCHAR}, 
+        #{item.autoapprovescopes,jdbcType=VARCHAR})
+    </foreach>
+  </insert>
+  <insert id="insertOrUpdate" parameterType="com.yin.springboot.user.center.domain.Clientdetails">
+    <!--@mbg.generated generated on Thu Jul 11 11:29:40 CST 2019.-->
+    insert into clientdetails
+    (appId, resourceIds, appSecret, `scope`, grantTypes, redirectUrl, authorities, access_token_validity, 
+      refresh_token_validity, additionalInformation, autoApproveScopes)
+    values
+    (#{appid,jdbcType=VARCHAR}, #{resourceids,jdbcType=VARCHAR}, #{appsecret,jdbcType=VARCHAR}, 
+      #{scope,jdbcType=VARCHAR}, #{granttypes,jdbcType=VARCHAR}, #{redirecturl,jdbcType=VARCHAR}, 
+      #{authorities,jdbcType=VARCHAR}, #{accessTokenValidity,jdbcType=INTEGER}, #{refreshTokenValidity,jdbcType=INTEGER}, 
+      #{additionalinformation,jdbcType=VARCHAR}, #{autoapprovescopes,jdbcType=VARCHAR}
+      )
+    on duplicate key update 
+    appId = #{appid,jdbcType=VARCHAR}, 
+    resourceIds = #{resourceids,jdbcType=VARCHAR}, 
+    appSecret = #{appsecret,jdbcType=VARCHAR}, 
+    `scope` = #{scope,jdbcType=VARCHAR}, 
+    grantTypes = #{granttypes,jdbcType=VARCHAR}, 
+    redirectUrl = #{redirecturl,jdbcType=VARCHAR}, 
+    authorities = #{authorities,jdbcType=VARCHAR}, 
+    access_token_validity = #{accessTokenValidity,jdbcType=INTEGER}, 
+    refresh_token_validity = #{refreshTokenValidity,jdbcType=INTEGER}, 
+    additionalInformation = #{additionalinformation,jdbcType=VARCHAR}, 
+    autoApproveScopes = #{autoapprovescopes,jdbcType=VARCHAR}
+  </insert>
+  <insert id="insertOrUpdateSelective" parameterType="com.yin.springboot.user.center.domain.Clientdetails">
+    <!--@mbg.generated generated on Thu Jul 11 11:29:40 CST 2019.-->
+    insert into clientdetails
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="appid != null">
+        appId,
+      </if>
+      <if test="resourceids != null">
+        resourceIds,
+      </if>
+      <if test="appsecret != null">
+        appSecret,
+      </if>
+      <if test="scope != null">
+        `scope`,
+      </if>
+      <if test="granttypes != null">
+        grantTypes,
+      </if>
+      <if test="redirecturl != null">
+        redirectUrl,
+      </if>
+      <if test="authorities != null">
+        authorities,
+      </if>
+      <if test="accessTokenValidity != null">
+        access_token_validity,
+      </if>
+      <if test="refreshTokenValidity != null">
+        refresh_token_validity,
+      </if>
+      <if test="additionalinformation != null">
+        additionalInformation,
+      </if>
+      <if test="autoapprovescopes != null">
+        autoApproveScopes,
+      </if>
+    </trim>
+    values
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="appid != null">
+        #{appid,jdbcType=VARCHAR},
+      </if>
+      <if test="resourceids != null">
+        #{resourceids,jdbcType=VARCHAR},
+      </if>
+      <if test="appsecret != null">
+        #{appsecret,jdbcType=VARCHAR},
+      </if>
+      <if test="scope != null">
+        #{scope,jdbcType=VARCHAR},
+      </if>
+      <if test="granttypes != null">
+        #{granttypes,jdbcType=VARCHAR},
+      </if>
+      <if test="redirecturl != null">
+        #{redirecturl,jdbcType=VARCHAR},
+      </if>
+      <if test="authorities != null">
+        #{authorities,jdbcType=VARCHAR},
+      </if>
+      <if test="accessTokenValidity != null">
+        #{accessTokenValidity,jdbcType=INTEGER},
+      </if>
+      <if test="refreshTokenValidity != null">
+        #{refreshTokenValidity,jdbcType=INTEGER},
+      </if>
+      <if test="additionalinformation != null">
+        #{additionalinformation,jdbcType=VARCHAR},
+      </if>
+      <if test="autoapprovescopes != null">
+        #{autoapprovescopes,jdbcType=VARCHAR},
+      </if>
+    </trim>
+    on duplicate key update 
+    <trim suffixOverrides=",">
+      <if test="appid != null">
+        appId = #{appid,jdbcType=VARCHAR},
+      </if>
+      <if test="resourceids != null">
+        resourceIds = #{resourceids,jdbcType=VARCHAR},
+      </if>
+      <if test="appsecret != null">
+        appSecret = #{appsecret,jdbcType=VARCHAR},
+      </if>
+      <if test="scope != null">
+        `scope` = #{scope,jdbcType=VARCHAR},
+      </if>
+      <if test="granttypes != null">
+        grantTypes = #{granttypes,jdbcType=VARCHAR},
+      </if>
+      <if test="redirecturl != null">
+        redirectUrl = #{redirecturl,jdbcType=VARCHAR},
+      </if>
+      <if test="authorities != null">
+        authorities = #{authorities,jdbcType=VARCHAR},
+      </if>
+      <if test="accessTokenValidity != null">
+        access_token_validity = #{accessTokenValidity,jdbcType=INTEGER},
+      </if>
+      <if test="refreshTokenValidity != null">
+        refresh_token_validity = #{refreshTokenValidity,jdbcType=INTEGER},
+      </if>
+      <if test="additionalinformation != null">
+        additionalInformation = #{additionalinformation,jdbcType=VARCHAR},
+      </if>
+      <if test="autoapprovescopes != null">
+        autoApproveScopes = #{autoapprovescopes,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>

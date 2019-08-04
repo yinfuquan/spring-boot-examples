@@ -1,0 +1,10 @@
+
+
+
+
+<if test="queryParam.receiverKeyword!=null and queryParam.receiverKeyword!=''">
+    AND (
+    receiver_name LIKE concat("%",#{queryParam.receiverKeyword},"%")
+    OR receiver_phone LIKE concat("%",#{queryParam.receiverKeyword},"%")
+    )
+</if>

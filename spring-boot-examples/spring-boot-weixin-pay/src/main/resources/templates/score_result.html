@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout/content_layout}" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>有奖项参赛队员界面</title>
+	</head>
+	<body>
+	<div layout:fragment="content">
+		<div class="roboa-login-member-bg roboa-member-index-bg">
+			<div th:replace="fragments/header::header">&nbsp;</div>
+			<div class="layui-container">
+				<div class="layui-row">
+					<div class="layui-col-sm5">
+						<div class="layui-col-sm11 roboa-member-infor">
+							<div class="layui-col-xs4 roboa-member-tit">
+								<p>参赛队员信息</p>
+							</div>
+							<div class="roboa-member-photo">
+								<img src="static/image/login/com.png" />
+							</div>
+							<div class="layui-col-xs12 roboa-member-infor-center">
+								<form class="layui-form" action="">
+									<div class="layui-form-item">
+										<label class="layui-form-label">参赛证件</label>
+										<div class="layui-input-inline">
+											<input type="text" readonly="readonly" lay-verify="identity" placeholder="" autocomplete="off" class="layui-input" th:value="${teamMember?.cardTypeDesc}">
+										</div>
+									</div>
+									<div class="layui-form-item">
+										<label class="layui-form-label">参赛员证件号码</label>
+										<div class="layui-input-inline">
+											<input type="text" readonly="readonly" lay-verify="identity" placeholder="" autocomplete="off" class="layui-input" th:value="${teamMember?.cardNo}">
+										</div>
+									</div>
+
+									<div class="layui-form-item">
+										<label class="layui-form-label">注册时间</label>
+										<div class="layui-input-inline">
+											<input type="text" lay-verify="required" readonly="readonly" placeholder="" autocomplete="off" class="layui-input" th:value="${#dates.format(teamMember?.createdAt, 'yyyy-MM-dd')}">
+										</div>
+									</div>
+									<div class="layui-form-item">
+										<label class="layui-form-label">姓名</label>
+										<div class="layui-input-inline">
+											<input type="text" lay-verify="required" readonly="readonly" placeholder="" autocomplete="off" class="layui-input" th:value="${teamMember?.name}">
+										</div>
+									</div>
+									<div class="layui-form-item">
+										<div class="layui-inline">
+											<label class="layui-form-label">联系电话</label>
+											<div class="layui-input-inline">
+												<input type="tel" lay-verify="required|phone" readonly="readonly" autocomplete="off" class="layui-input" th:value="${teamMember?.contactMobile}">
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="layui-col-sm7">
+						<div class="layui-col-xs12 roboa-member-type">
+							<div class="layui-col-xs12 roboa-member-tit-all">
+								<p>我的赛事</p>
+							</div>
+							<div class="layui-col-xs12 roboa-member-progress-bg">
+								<div class="layui-col-xs10 layui-col-xs-offset3">
+									<div class="layui-col-xs3 roboa-member-progress">
+										<p class="roboa-progress-o" th:text="${countTeamCount}">0</p>
+										<span></span>
+										<p>已参加的赛事</p>
+									</div>
+									<div class="layui-col-xs3 roboa-member-progress">
+										<p class="roboa-progress-o" th:text="${countAward}">0</p>
+										<span></span>
+										<p>获奖的赛事</p>
+									</div>
+								</div>
+								<div class="layui-col-xs12" style="padding: 0 20px;">
+									<table id="teamTable" class="layui-table"  lay-filter="teamTable"></table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/html" class="barDemo">
+ 			<a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+		</script>
+		<script type="text/javascript" th:inline="none">
+			layui.use(['table', 'jquery'], function(){
+					
+				var table = layui.table;
+
+			  	table.render({
+				  	elem:"#teamTable",
+				  	url:"score_result_data.json",
+				  	cols:[[
+						{ title:"队伍名称", field:'teamName', width:100},
+					  	{ title:"参赛单位", field:'organizationName'},
+					  	{ title:"赛事名称", field: 'matchName'},
+					  	{ title:"地点", field:'matchCity', width:80},
+					  	{ title:"获奖情况", field:'teamAward', width:100}
+			  	  	]]
+			  	});
+			});
+		</script>
+	</div>
+	</body>
+</html>

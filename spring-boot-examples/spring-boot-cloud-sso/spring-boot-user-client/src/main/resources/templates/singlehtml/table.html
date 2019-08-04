@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../static/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/admin.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/layui/css/layui.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/fastui.css"/>
+</head>
+<body>
+<div class="fastui-screen">
+    <header class="fastui-header">
+        <div class="fastui-logo">
+            <img src="../../static/images/logo.png"/>
+            <span>财务中台</span>
+        </div>
+        <ul class="layui-nav fastui-menubar">
+            <li class="layui-nav-item">
+                <a href="../index.html">首页</a>
+            </li>
+            <li class="layui-nav-item layui-this">
+                <a href="../single.html">单页面</a>
+            </li>
+            <!--<li class="layui-nav-item"><span></span></li>-->
+            <li class="layui-nav-item">
+                <a href="../window.html">多窗口</a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="../ucproject/ucuser.html">用户中心</a>
+            </li>
+        </ul>
+        <ul class="layui-nav fastui-usercenter" lay-filter="user_operation">
+            <li class="layui-nav-item fastui-product">
+                <a href="javascript:void(0);"><i class="layui-icon">&#xe653;</i>我的应用</a>
+            </li>
+            <li class="layui-nav-item fastui-product">
+                <a href="javascript:void(0);"><i class="layui-icon">&#xe66f;</i>龙斌</a>
+                <dl class="layui-nav-child">
+                    <dd>
+                        <a href="#">个人设置</a>
+                    </dd>
+                    <dd>
+                        <a href="login.html">退出系统</a>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    </header>
+    <div class="fastui-twomenu-bg">
+        <ul class="fastui-menu-wrapper">
+            <li><a href="../single.html">首页</a></li>
+            <li>
+                <a href="#">表格<i class="layui-icon">&#xe625;</i></a>
+                <ul class="fastui-two-menu">
+                    <li><a href="table.html">表格</a></li>
+                    <li><a href="table1.html">大表格</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">表单<i class="layui-icon">&#xe625;</i></a>
+                <ul class="fastui-two-menu">
+                    <li><a href="form.html">表单</a></li>
+                    <li><a href="contract.html">合同</a></li>
+                    <li><a href="form1.html">大表单</a></li>
+                    <li><a href="form2.html">表单帮助</a></li>
+                </ul>
+            </li>
+            <li><a href="bill.html">付款单</a></li>
+            <li><a href="#">订单</a></li>
+            <li>
+                <a href="#">错误页面<i class="layui-icon">&#xe625;</i></a>
+                <ul class="fastui-two-menu">
+                    <li><a href="404.html">404</a></li>
+                    <li><a href="500.html">500</a></li>
+                    <li><a href="nodata.html">无权限</a></li>
+                    <li><a href="load.html">加载中</a></li>
+                    <li><a href="develop.html">开发中</a></li>
+                </ul>
+            </li>
+            <li><span></span></li>
+            <li><a href="#">记录</a></li>
+        </ul>
+    </div>
+    <div class="layui-row fastui-single-content">
+        <div class="layui-col-xs12 layui-col-md10 layui-col-md-offset1">
+            <div class="layui-card">
+                <div class="layui-card-header fastui-card-header">表格</div>
+                <div class="layui-card-body fastui-content-style">
+                    <table class="layui-hide" id="fastui-single-tooltable" lay-filter="fastui-single-tooltable"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fastui-footer">
+			<span class="left">
+			  <a href=""><i class="layui-icon">&#xe68e;</i>首页</a>
+			  <span>&gt;</span>
+			  <a href="">国际新闻</a>
+			  <span>&gt;</span>
+			  <a href="">亚太地区</a>
+			</span>
+    <span class="right">财务中台管理系统V1.0.0 Build 4564</span>
+</div>
+<!--弹出层-->
+<div id="fastui-bill-form" class="layui-hide">
+    <form class="layui-form">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label"><span>*</span>费用类型：</label>
+                <div class="layui-input-inline" style="width: 120px;">
+                    <select>
+                        <option value="请选择类型">请选择类型</option>
+                        <option value="房租费">房租费</option>
+                        <option value="物管费">物管费</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label"><span>*</span>期数：</label>
+                <div class="layui-input-inline" style="width: 120px;">
+                    <select>
+                        <option value="请选择期数">请选择期数</option>
+                        <option value="无">无</option>
+                        <option value="三">三</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label"><span>*</span>付款总金额：</label>
+                <div class="layui-input-inline" style="width: 120px;">
+                    <input type="text" name="" lay-verify="" placeholder="请输入金额" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label"><span>*</span>是否纳税：</label>
+                <input type="radio" name="yes" value="是" title="是" checked="">
+                <input type="radio" name="yes" value="否" title="否">
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label"><span>*</span>开票类型：</label>
+                <div class="layui-input-inline" style="width: 120px;">
+                    <select>
+                        <option value="含票甲方开">含票甲方开</option>
+                        <option value="无">无</option>
+                        <option value="三">三</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label"><span>*</span>税率：</label>
+                <div class="layui-input-inline" style="width: 80px;">
+                    <input class="layui-input" type="text" name="title" value="" lay-verify="required"
+                           autocomplete="off" placeholder="请输入数字"/>
+                </div>
+                <div class="layui-form-mid layui-word-aux fastui-form-mid">%</div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label"><span>*</span>税金：</label>
+                <div class="layui-input-inline" style="width: 120px;">
+                    <input class="layui-input" type="text" name="title" value="" lay-verify="required"
+                           autocomplete="off" placeholder="请输入数字"/>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">费用起始日期：</label>
+                <div class="layui-input-inline">
+                    <input type="text" class="layui-input" id="fastui-bill-date" placeholder="请选择起始日期">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">费用结束日期：</label>
+                <div class="layui-input-inline">
+                    <input type="text" class="layui-input" id="fastui-bill-date1" placeholder="请选择结束日期">
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">计划付款日期：</label>
+                <div class="layui-input-inline" style="width: 130px;">
+                    <input type="text" class="layui-input" id="fastui-bill-date2" placeholder="请选择计划付款日期">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">支付状态：</label>
+                <div class="layui-input-inline" style="width: 80px;">
+                    <select>
+                        <option value="未支付">未支付</option>
+                        <option value="已支付">已支付</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">实际付款日期：</label>
+                <div class="layui-input-inline" style="width: 130px;">
+                    <input type="text" class="layui-input" id="fastui-bill-date3" placeholder="请选择实际付款日期">
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">开户名:</label>
+                <div class="layui-input-inline" style="width: 160px;">
+                    <input type="text" name="" lay-verify="" placeholder="请输入银行卡号开卡人姓名" autocomplete="off"
+                           class="layui-input">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">开户行:</label>
+                <div class="layui-input-inline" style="width: 200px;">
+                    <input type="text" name="" lay-verify="" placeholder="请输入银行卡支行" autocomplete="off"
+                           class="layui-input">
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">开户账号:</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="" lay-verify="" placeholder="请输入开户账号" autocomplete="off"
+                           class="layui-input">
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">备注：</label>
+            <div class="layui-input-block">
+                <textarea class="layui-textarea"></textarea>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--头部工具条-->
+<script type="text/html" id="single-toolbarDemo">
+    <div class="layui-row">
+        <div class="fastui-toolbar-btn">
+            <div class="layui-row">
+                <button class="layui-btn layui-btn-normal fastui-btn-slide left"><i
+                        class="layui-icon">&#xe615;</i>搜索<span class="layui-badge fastui-badge">1</span></button>
+                <button class="layui-btn layui-btn-normal right" id="fastui-btn-bill"><i class="layui-icon">&#xe654;</i>添加付款单
+                </button>
+                <div class="layui-btn-group right" style="margin-right: 8px;">
+                    <button class="layui-btn fastui-btn fastui-btn-warn"><i class="layui-icon">&#xe60a;</i>查看</button>
+                    <button class="layui-btn fastui-btn fastui-btn-blue"><i class="layui-icon">&#xe654;</i>增加</button>
+                    <button class="layui-btn fastui-btn fastui-btn-org"><i class="layui-icon">&#xe642;</i>编辑</button>
+                    <button class="layui-btn fastui-btn fastui-btn-green">确认</button>
+                </div>
+            </div>
+            <div class="fastui-seacher-up layui-row">
+                <div class="fastui-seacher-hide">点击收起<i class="layui-icon">&#xe619;</i></div>
+                <form class="layui-form">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">搜索框:</label>
+                        <div class="layui-input-block">
+                            <ul class="fastui-seacher-ullist">
+                                <li><a href="#">全部</a></li>
+                                <li><a class="fastui-this" href="#">未开课</a></li>
+                                <li><a href="#">已开课</a></li>
+                                <li><a href="#">未开班</a></li>
+                                <li><a href="#">已开班</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">客户来源:</label>
+                        <div class="layui-input-block">
+                            <ul class="fastui-seacher-ullist">
+                                <li><a class="fastui-this" href="#">全部</a></li>
+                                <li><a href="#">地推</a></li>
+                                <li><a href="#">网络</a></li>
+                                <li><a href="#">渠道</a></li>
+                                <li><a href="#">转介绍</a></li>
+                                <li><a href="#">直访</a></li>
+                                <li><a href="#">拉访</a></li>
+                                <li><a href="#">来电</a></li>
+                                <li><a href="#">收购</a></li>
+                                <li><a href="#">团购</a></li>
+                                <li><a href="#">其他</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">星期多选:</label>
+                            <div class="layui-input-block">
+                                <input type="checkbox" name="" lay-skin="primary" title="周一">
+                                <input type="checkbox" name="" lay-skin="primary" title="周二">
+                                <input type="checkbox" name="" lay-skin="primary" title="周三">
+                                <input type="checkbox" name="" lay-skin="primary" title="周四" checked="">
+                                <input type="checkbox" name="" lay-skin="primary" title="周五">
+                                <input type="checkbox" name="" lay-skin="primary" title="周六">
+                                <input type="checkbox" name="" lay-skin="primary" title="周日" checked="">
+                                <input type="checkbox" name="" lay-skin="primary" title="全部">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">搜索框:</label>
+                            <div class="layui-input-block">
+                                <div class="layui-input-inline" style="width: 115px;">
+                                    <input type="text" name="phone" lay-verify="phone" autocomplete="off"
+                                           placeholder="请搜索手机号" class="layui-input">
+                                </div>
+                                <div class="layui-input-inline" style="width: 180px;">
+                                    <input type="text" name="identity" lay-verify="identity" autocomplete="off"
+                                           placeholder="请搜索身份证号" class="layui-input">
+                                </div>
+                                <div class="layui-input-inline">
+                                    <input class="layui-input" type="text" name="title" value="" autocomplete="off"
+                                           placeholder="请输入校区名称"/>
+                                </div>
+                                <div class="layui-input-inline">
+                                    <select>
+                                        <option value="">请选择状态</option>
+                                        <option value="杭州">杭州</option>
+                                        <option value="温州">温州</option>
+                                        <option value="温州">台州</option>
+                                        <option value="温州">绍兴</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">日期:</label>
+                            <div class="layui-input-block">
+                                <div class="layui-input-inline" style="width: 115px;">
+                                    <input class="layui-input" type="text" id="fastui-seacher-date3" name=""
+                                           autocomplete="off" placeholder="请搜索日期" value=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">日期范围:</label>
+                            <div class="layui-input-block">
+                                <div class="layui-input-inline" style="width: 200px;">
+                                    <input class="layui-input" type="text" id="fastui-seacher-date4" name=""
+                                           autocomplete="off" placeholder="请搜索日期" value=""/>
+                                </div>
+                                <div class="layui-input-inline">
+                                    <button class="layui-btn fastui-btn">查询</button>
+                                    <button class="layui-btn layui-btn-primary">重置</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="fastui-single-toolbar">
+    <a lay-event="edit" style="padding: 0 5px;">编辑</a>
+    <a lay-event="del" style="padding: 0 5px;">删除</a>
+    <div class="fastui-dropdown">
+        <a style="padding: 0 5px;">更多</a>
+        <ul class="fastui-dropdown-menu">
+            <li><a href="javascript:;">查看</a></li>
+            <li><a href="javascript:;">设置功能</a></li>
+            <li><a href="javascript:;">设置查看</a></li>
+        </ul>
+    </div>
+</script>
+<script src="../../static/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    layui.use(['jquery', 'form', 'laydate', 'layedit', 'table', 'layer'], function ($) {
+        var form = layui.form,
+            laydate = layui.laydate,
+            table = layui.table,
+            layer = layui.layer,
+            layedit = layui.layedit;
+
+        laydate.render({
+            elem: '#fastui-seacher-date3'
+        });
+        laydate.render({
+            elem: '#fastui-seacher-date4'
+            , range: true
+        })
+        table.render({
+            elem: '#fastui-single-tooltable'
+            , toolbar: '#single-toolbarDemo'
+            , size: 'sm'
+            , cellMinWidth: 80
+            , cols: [[
+
+                {type: 'checkbox'}
+                , {title: '操作', toolbar: '#fastui-single-toolbar'}
+                , {field: 'id', title: 'ID', width: 80}
+                , {field: 'username', title: '用户名'}
+                , {field: 'sex', title: '性别'}
+                , {field: 'city', title: '城市'}
+                , {field: 'sign', title: '签名'}
+                , {field: 'classify', title: '职业', event: 'setcfy'}
+                , {field: 'experience', title: '积分'}
+                , {field: 'score', title: '评分'}
+            ]]
+            , data: [
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                },
+            ]
+            , page: true
+        })
+
+        //监听行工具事件
+        table.on('tool(fastui-single-tooltable)', function (obj) {
+            var data = obj.data;
+            if (obj.event === 'del') {
+                layer.confirm('真的删除行么', function (index) {
+                    obj.del();
+                    layer.close(index);
+                });
+            } else if (obj.event === 'setcfy') {
+                layer.open({
+                    btn: false
+                    ,
+                    area: ['420px', '220px']
+                    ,
+                    title: '修改 ID 为 [' + data.id + '] 的用户'
+                    ,
+                    content: '<form class="layui-form"><div class="layui-form-item"><label class="layui-form-label">职业:</label><div class="layui-input-inline"><select><option value="">' + data.classify + '</option><option value="杭州">杭州</option><option value="温州">温州</option></select></div></div><div style="text-align:center;margin-top:60px;"><button class="layui-btn fastui-btn">确定</button></div></form>'
+                });
+            }
+            form.render()
+        });
+
+        $("#fastui-btn-bill").click(function () {
+            layer.open({
+                title: '添加付款单',
+                btn: ['保存并提交', '保存', '取消'],
+                area: ['840px', '580px'],
+                content: $('#fastui-bill-form').html()
+            })
+            form.render();
+        })
+        //表格中的更多的下拉效果
+        $(".fastui-dropdown").click(function () {
+            $(this).find(".fastui-dropdown-menu").stop().slideToggle()
+        })
+
+        //搜索中的展开和收起
+        $(".fastui-toolbar-btn .fastui-btn-slide").click(function () {
+            $(".fastui-seacher-up").stop().slideToggle(500);
+        })
+        $(".fastui-seacher-hide").click(function () {
+            $(".fastui-seacher-up").stop().slideUp(500);
+        })
+
+
+        //二级导航效果
+        $(".fastui-menu-wrapper li").hover(function () {
+            $(this).find(".fastui-two-menu").stop().slideDown(200)
+        }, function () {
+            $(this).find(".fastui-two-menu").stop().slideUp(200)
+        })
+    });
+</script>
+</body>
+</html>

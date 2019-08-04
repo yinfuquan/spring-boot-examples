@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../static/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/admin.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/layui/css/layui.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/fastui.css"/>
+</head>
+<body>
+<div class="fastui-screen">
+    <header class="fastui-header">
+        <div class="fastui-logo">
+            <img src="../../static/images/logo.png"/>
+            <span>财务中台</span>
+        </div>
+        <ul class="layui-nav fastui-menubar">
+            <li class="layui-nav-item">
+                <a href="../index.html">首页</a>
+            </li>
+            <li class="layui-nav-item layui-this">
+                <a href="../single.html">单页面</a>
+            </li>
+            <!--<li class="layui-nav-item"><span></span></li>-->
+            <li class="layui-nav-item">
+                <a href="../window.html">多窗口</a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="../ucproject/ucuser.html">用户中心</a>
+            </li>
+        </ul>
+        <ul class="layui-nav fastui-usercenter" lay-filter="user_operation">
+            <li class="layui-nav-item fastui-product">
+                <a href="javascript:void(0);"><i class="layui-icon">&#xe653;</i>我的应用</a>
+            </li>
+            <li class="layui-nav-item fastui-product">
+                <a href="javascript:void(0);"><i class="layui-icon">&#xe66f;</i>龙斌</a>
+                <dl class="layui-nav-child">
+                    <dd>
+                        <a href="#">个人设置</a>
+                    </dd>
+                    <dd>
+                        <a href="login.html">退出系统</a>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    </header>
+    <div class="fastui-twomenu-bg">
+        <ul class="fastui-menu-wrapper">
+            <li><a href="../single.html">首页</a></li>
+            <li>
+                <a href="#">表格<i class="layui-icon">&#xe625;</i></a>
+                <ul class="fastui-two-menu">
+                    <li><a href="table.html">表格</a></li>
+                    <li><a href="table1.html">大表格</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">表单<i class="layui-icon">&#xe625;</i></a>
+                <ul class="fastui-two-menu">
+                    <li><a href="form.html">表单</a></li>
+                    <li><a href="contract.html">合同</a></li>
+                    <li><a href="form1.html">大表单</a></li>
+                    <li><a href="form2.html">表单帮助</a></li>
+                </ul>
+            </li>
+            <li><a href="bill.html">付款单</a></li>
+            <li><a href="#">订单</a></li>
+            <li>
+                <a href="#">错误页面<i class="layui-icon">&#xe625;</i></a>
+                <ul class="fastui-two-menu">
+                    <li><a href="404.html">404</a></li>
+                    <li><a href="500.html">500</a></li>
+                    <li><a href="nodata.html">无权限</a></li>
+                    <li><a href="load.html">加载中</a></li>
+                    <li><a href="develop.html">开发中</a></li>
+                </ul>
+            </li>
+            <li><span></span></li>
+            <li><a href="#">记录</a></li>
+        </ul>
+    </div>
+    <div class="layui-row fastui-single-content">
+        <div class="layui-col-xs12 layui-col-md8 layui-col-md-offset2">
+            <div class="layui-card">
+                <div class="layui-card-header fastui-card-header" style="margin-bottom: 25px;">表单</div>
+                <div class="layui-card-body">
+                    <form class="layui-form fastui-form">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">名称框:</label>
+                            <div class="layui-input-inline">
+                                <input class="layui-input" type="text" name="title" value="" lay-verify="required"
+                                       autocomplete="off" placeholder="请输入标题"/>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">手机号:</label>
+                            <div class="layui-input-inline">
+                                <input class="layui-input" id="fastui-phone" required="required" type="tel" name="phone"
+                                       value="" lay-verify="phone" autocomplete="off" placeholder="请输入手机号"/>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">邮箱:</label>
+                            <div class="layui-input-inline fastui-join-check">
+                                <input class="layui-input" type="email" name="email" value="" lay-verify="required"
+                                       autocomplete="off" placeholder="请输入邮箱"/>
+                                <input type="checkbox" name="" lay-skin="primary" title="待选">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">日期:</label>
+                            <div class="layui-input-block">
+                                <div class="layui-input-inline">
+                                    <input class="layui-input" type="text" id="fastui-date3" name="title" value=""
+                                           autocomplete="off" placeholder="请选择日期"/>
+                                </div>
+                                <div class="layui-input-inline" style="width: 510px;">
+                                    <input type="radio" name="week" value="周一" title="周一" checked="">
+                                    <input type="radio" name="week" value="周二" title="周二">
+                                    <input type="radio" name="week" value="周三" title="周三">
+                                    <input type="radio" name="week" value="周四" title="周四">
+                                    <input type="radio" name="week" value="周五" title="周五">
+                                    <input type="radio" name="week" value="周六" title="周六">
+                                    <input type="radio" name="week" value="周日" title="周日">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">下拉选择框:</label>
+                            <div class="layui-input-block">
+                                <div class="layui-input-inline" style="width: 245px;">
+                                    <select>
+                                        <option value="">请选择状态</option>
+                                        <option value="杭州">杭州</option>
+                                        <option value="温州">温州</option>
+                                        <option value="温州">台州</option>
+                                        <option value="温州">绍兴</option>
+                                    </select>
+                                </div>
+                                <div class="layui-input-inline" style="width: 150px;">
+                                    <select>
+                                        <option value="">请选择状态</option>
+                                        <option value="杭州">杭州</option>
+                                        <option value="温州">温州</option>
+                                        <option value="温州">台州</option>
+                                        <option value="温州">绍兴</option>
+                                    </select>
+                                </div>
+                                <div class="layui-input-inline" style="width: 100px;">
+                                    <select>
+                                        <option value="">请选择状态</option>
+
+                                        <option value="杭州">杭州</option>
+                                        <option value="温州">温州</option>
+                                        <option value="温州">台州</option>
+                                        <option value="温州">绍兴</option>
+                                    </select>
+                                </div>
+                                <div class="layui-input-inline" style="width: 130px;">
+                                    <input class="layui-input" type="text" id="fastui-date4" name="title" value=""
+                                           autocomplete="off" placeholder="请选择日期"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">激活</label>
+                            <div class="layui-input-block">
+                                <div class="layui-input-inline">
+                                    <input type="checkbox" name="switch" lay-skin="switch" lay-text="ON|OFF">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">单选框</label>
+                            <div class="layui-input-block" style="margin-top: 0px;">
+                                <input type="radio" name="sex" value="男" title="男" checked="">
+                                <input type="radio" name="sex" value="女" title="女">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">文本域:</label>
+                            <div class="layui-input-block">
+                                <div class="layui-input-inline" style="width: 80%;">
+                                    <textarea class="layui-textarea" id="fastui-textarea" style=" min-height: 100px;"
+                                              placeholder="备注"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn fastui-btn" lay-submit="" lay-filter="fastui-form-sub">立即提交
+                                </button>
+                                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fastui-footer">
+			<span class="left">
+			  <a href=""><i class="layui-icon">&#xe68e;</i>首页</a>
+			  <span>&gt;</span>
+			  <a href="">国际新闻</a>
+			  <span>&gt;</span>
+			  <a href="">亚太地区</a>
+			</span>
+    <span class="right">财务中台管理系统V1.0.0 Build 4564</span>
+</div>
+<script src="../../static/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    layui.use(['jquery', 'form', 'laydate', 'layedit'], function ($) {
+        var form = layui.form,
+            laydate = layui.laydate,
+            layedit = layui.layedit;
+        layedit.build('fastui-textarea')
+        laydate.render({
+            elem: '#fastui-date3',
+            range: true
+        });
+        laydate.render({
+            elem: '#fastui-date4'
+        });
+        form.verify({
+            photo: function (value) {
+                if (value === '') {
+                    return '请输入手机号'
+                }
+            }
+        })
+        $('#fastui-phone').on('blur', blurV);
+
+        function blurV() {
+            var DANGER = 'layui-form-danger',
+                stop = null,
+                verify = form.config.verify,
+                device = layui.device()
+            var othis = $(this), ver = othis.attr('lay-verify'), tips = '';
+            var value = othis.val(), isFn = typeof verify[ver] === 'function';
+            othis.removeClass(DANGER);
+            if (verify[ver] && (isFn ? tips = verify[ver](value, this) : !verify[ver][0].test(value))) {
+                layer.msg(tips || verify[ver][1], {
+                    icon: 5
+                    , shift: 6
+                });
+                //非移动设备自动定位焦点
+                if (!device.android && !device.ios) {
+                    this.focus();
+                }
+                othis.addClass(DANGER);
+                return stop = true;
+            }
+        }
+
+
+        $(".fastui-menu-wrapper li").hover(function () {
+            $(this).find(".fastui-two-menu").stop().slideDown(200)
+        }, function () {
+            $(this).find(".fastui-two-menu").stop().slideUp(200)
+        })
+    });
+</script>
+</body>
+</html>

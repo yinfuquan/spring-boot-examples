@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../static/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/admin.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/layui/css/layui.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/fastui.css"/>
+</head>
+<body>
+<div class="fastui-screen">
+    <header class="fastui-header">
+        <div class="fastui-logo">
+            <img src="../../static/images/logo.png"/>
+            <span>财务中台</span>
+        </div>
+        <ul class="layui-nav fastui-menubar">
+            <li class="layui-nav-item">
+                <a href="../index.html">首页</a>
+            </li>
+            <li class="layui-nav-item layui-this">
+                <a href="../single.html">单页面</a>
+            </li>
+            <!--<li class="layui-nav-item"><span></span></li>-->
+            <li class="layui-nav-item">
+                <a href="../window.html">多窗口</a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="../ucproject/ucuser.html">用户中心</a>
+            </li>
+        </ul>
+        <ul class="layui-nav fastui-usercenter" lay-filter="user_operation">
+            <li class="layui-nav-item fastui-product">
+                <a href="javascript:void(0);"><i class="layui-icon">&#xe653;</i>我的应用</a>
+            </li>
+            <li class="layui-nav-item fastui-product">
+                <a href="javascript:void(0);"><i class="layui-icon">&#xe66f;</i>龙斌</a>
+                <dl class="layui-nav-child">
+                    <dd>
+                        <a href="#">个人设置</a>
+                    </dd>
+                    <dd>
+                        <a href="login.html">退出系统</a>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    </header>
+    <div class="fastui-twomenu-bg">
+        <ul class="fastui-menu-wrapper">
+            <li><a href="../single.html">首页</a></li>
+            <li>
+                <a href="#">表格<i class="layui-icon">&#xe625;</i></a>
+                <ul class="fastui-two-menu">
+                    <li><a href="table.html">表格</a></li>
+                    <li><a href="table1.html">大表格</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">表单<i class="layui-icon">&#xe625;</i></a>
+                <ul class="fastui-two-menu">
+                    <li><a href="form.html">表单</a></li>
+                    <li><a href="contract.html">合同</a></li>
+                    <li><a href="form1.html">大表单</a></li>
+                    <li><a href="form2.html">表单帮助</a></li>
+                </ul>
+            </li>
+            <li><a href="bill.html">付款单</a></li>
+            <li><a href="#">订单</a></li>
+            <li>
+                <a href="#">错误页面<i class="layui-icon">&#xe625;</i></a>
+                <ul class="fastui-two-menu">
+                    <li><a href="404.html">404</a></li>
+                    <li><a href="500.html">500</a></li>
+                    <li><a href="nodata.html">无权限</a></li>
+                    <li><a href="load.html">加载中</a></li>
+                    <li><a href="develop.html">开发中</a></li>
+                </ul>
+            </li>
+            <li><span></span></li>
+            <li><a href="#">记录</a></li>
+        </ul>
+    </div>
+    <div class="fastui-single-content">
+        <div class="layui-row layui-card">
+            <div class="layui-col-xs12">
+                <div class="layui-card-header fastui-card-header">表单</div>
+                <div class="layui-card-body">
+                    <form class="layui-form fastui-form">
+                        <fieldset class="layui-elem-field layui-field-title fastui-field-color">
+                            <legend>基础信息</legend>
+                        </fieldset>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">分公司:</label>
+                                <div class="layui-input-inline">
+                                    <input class="layui-input fastui-bill-input" readonly="readonly" type="text"
+                                           value="某某某分公司" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">注册公司:</label>
+                                <div class="layui-input-inline">
+                                    <input class="layui-input fastui-bill-input" readonly="readonly" type="text"
+                                           value="某某某分公司" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">合同编号:</label>
+                                <div class="layui-input-inline">
+                                    <input class="layui-input fastui-bill-input" readonly="readonly" type="text"
+                                           value="784267444" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">活动中心:</label>
+                                <div class="layui-input-inline">
+                                    <input class="layui-input fastui-bill-input" readonly="readonly" type="text"
+                                           value="苹果园活动中心" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">房屋用途:</label>
+                                <div class="layui-input-inline">
+                                    <input class="layui-input fastui-bill-input" readonly="readonly" type="text"
+                                           value="门店" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">支付状态:</label>
+                                <div class="layui-input-inline">
+                                    <input class="layui-input fastui-bill-input" readonly="readonly" type="text"
+                                           value="已支付" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">申请人:</label>
+                                <div class="layui-input-inline">
+                                    <input class="layui-input fastui-bill-input" readonly="readonly" type="text"
+                                           value="大帅哥" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">制单人:</label>
+                                <div class="layui-input-inline">
+                                    <input class="layui-input fastui-bill-input" readonly="readonly" type="text"
+                                           value="大帅哥" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">开户名:</label>
+                                <div class="layui-input-inline">
+                                    <input class="layui-input fastui-bill-input" readonly="readonly" type="text"
+                                           value="前海人寿保险股份有限公司" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">开户行:</label>
+                                <div class="layui-input-inline">
+                                    <input class="layui-input fastui-bill-input" readonly="readonly" type="text"
+                                           value="工商银行北京正大路支行" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">账号:</label>
+                                <div class="layui-input-inline">
+                                    <input class="layui-input fastui-bill-input" readonly="readonly" type="text"
+                                           value="6214850117767316" autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="layui-form-label">地址:</label>
+                                <div class="layui-input-block">
+                                    <input class="layui-input fastui-bill-input" readonly="readonly" type="text"
+                                           value="石景山区苹果园28号院1号楼前海人寿大厦2层201室" autocomplete="off"/>
+                                </div>
+                            </div>
+                        </div>
+                        <fieldset class="layui-elem-field layui-field-title fastui-field-color">
+                            <legend>房屋信息</legend>
+                        </fieldset>
+                        <div class="layui-card-body fastui-content-style">
+                            <table class="layui-table" id="fastui-bill-table" lay-filter="fastui-bill-table"></table>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block fastui-btn-center">
+                                <button class="layui-btn fastui-btn" lay-submit="" lay-filter="fastui-form-sub">提交
+                                </button>
+                                <button class="layui-btn fastui-btn">保存</button>
+                                <button type="reset" class="layui-btn layui-btn-primary">取消</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fastui-footer">
+			<span class="left">
+			  <a href=""><i class="layui-icon">&#xe68e;</i>首页</a>
+			  <span>&gt;</span>
+			  <a href="">国际新闻</a>
+			  <span>&gt;</span>
+			  <a href="">亚太地区</a>
+			</span>
+    <span class="right">财务中台管理系统V1.0.0 Build 4564</span>
+</div>
+<script src="../../static/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    layui.use(['jquery', 'form', 'laydate', 'layedit', 'table'], function ($) {
+        var form = layui.form,
+            laydate = layui.laydate,
+            table = layui.table,
+            layedit = layui.layedit;
+        table.render({
+            elem: '#fastui-bill-table'
+            , size: 'sm'
+            , cellMinWidth: 80
+            , cols: [[
+                {field: 'id', title: 'ID', width: 80}
+                , {field: 'username', title: '用户名'}
+                , {field: 'sex', title: '性别'}
+                , {field: 'city', title: '城市'}
+                , {field: 'sign', title: '签名'}
+                , {field: 'classify', title: '职业'}
+                , {field: 'experience', title: '积分'}
+                , {field: 'score', title: '评分'}
+            ]]
+            , data: [
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100'
+                }
+            ]
+        })
+        $(".fastui-menu-wrapper li").hover(function () {
+            $(this).find(".fastui-two-menu").stop().slideDown(200)
+        }, function () {
+            $(this).find(".fastui-two-menu").stop().slideUp(200)
+        })
+    });
+</script>
+</body>
+</html>

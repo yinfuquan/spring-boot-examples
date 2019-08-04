@@ -1,0 +1,3 @@
+2019-08-04 11:30:35.611 INFO [main]com.yin.springboot.log.SpringBootLogApplicationTests.logStarting:50 -Starting SpringBootLogApplicationTests on PC-20170204FYZW with PID 10576 (started by Administrator in F:\spring-boot-examples\spring-boot-log)
+2019-08-04 11:30:35.616 INFO [main]com.yin.springboot.log.SpringBootLogApplicationTests.logStartupProfileInfo:646 -No active profile set, falling back to default profiles: default
+2019-08-04 11:30:36.349 INFO [main]com.yin.springboot.log.SpringBootLogApplicationTests.logStarted:59 -Started SpringBootLogApplicationTests in 1.346 seconds (JVM running for 2.298)

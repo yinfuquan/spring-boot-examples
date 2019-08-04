@@ -1,0 +1,1787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e758fd5a-7f27-4879-898f-3de660155d02" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-redis/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-common/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-beetlsql/target/" />
+    <ignored path="$PROJECT_DIR$/demo/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-elasticsearch/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-qq-login/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-swagger/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-docker/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-sso/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-cloud-sso/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-user-center/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-user-client/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-oauth/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-user-center2/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-mybatis/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-rabbitmq/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-product/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-consumer/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-weixin-pay/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-netty/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-netty/spring-boot-netty-client/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-netty/spring-boot-netty-server/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-commons/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-commons/spring-boot-common-core/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-commons/spring-boot-common-base/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-commons/spring-boot-common-utils/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-zookeeper/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-test/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-thread/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-login/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-shiro/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-mybatis-plus/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-freemarker/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-vue/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-email/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-log/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-web/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-websocket/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-config/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sso" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sso" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sso" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sso: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-websocket/src/main/java/com/yin/springboot/websocket/config/WebSocketConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-websocket/src/main/resources/static/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-config/src/main/java/com/yin/springbootconfig/config/Config1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-config/src/main/java/com/yin/springbootconfig/config/Config2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spring-boot-config/src/main/java/com/yin/springbootconfig/config/ConfigMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-config/src/test/java/com/yin/springbootconfig/SpringBootConfigApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#514#515#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-config/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-config/src/main/java/com/yin/springbootconfig/config/ConfigActive.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-beetlsql/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="28" column="21" selection-start-line="24" selection-start-column="5" selection-end-line="28" selection-end-column="21" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-config/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>web</find>
+      <find>selectByPrimaryKey</find>
+      <find>fastui-login-sub</find>
+      <find>fastui-login-code</find>
+      <find>pagehelper-spring-bo</find>
+      <find>usernamepass</find>
+      <find>extractRememberMeCookie</find>
+      <find>signatureMap</find>
+      <find>dialect</find>
+      <find>selectAll</find>
+      <find>result</find>
+      <find>interceptorChain</find>
+      <find>resultHandler</find>
+      <find>resultSetHandler</find>
+      <find>threadLocals</find>
+    </findStrings>
+    <dirStrings>
+      <dir>F:\spring-boot-examples\spring-boot-cloud-sso\spring-boot-user-center\src\main\resources\static</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/spring-boot-commons/spring-boot-common-core/src/main/java/com/yin/springboot/common/core/aspect/OperationLogAspect.java" />
+        <option value="$PROJECT_DIR$/spring-boot-commons/spring-boot-common-utils/src/main/java/com/yin/springboot/common/utils/ip/IPUtils.java" />
+        <option value="$PROJECT_DIR$/spring-boot-commons/spring-boot-common-utils/src/main/java/com/yin/springboot/common/utils/webutils/WebHelper.java" />
+        <option value="$PROJECT_DIR$/spring-boot-email/src/main/java/com/yin/springboot/email/service/MailService.java" />
+        <option value="$PROJECT_DIR$/spring-boot-email/src/main/java/com/yin/springboot/email/ctl/IdUtil.java" />
+        <option value="$PROJECT_DIR$/spring-boot-email/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-email/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/spring-boot-email/src/main/java/com/yin/springboot/email/User.java" />
+        <option value="$PROJECT_DIR$/spring-boot-email/src/main/java/com/yin/springboot/email/ctl/EmailCtl.java" />
+        <option value="$PROJECT_DIR$/spring-boot-redis/src/test/java/com/yin/springboot/redis/SpringBootRedisApplicationTests.java" />
+        <option value="$PROJECT_DIR$/spring-boot-test/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-test/src/main/java/com/yin/springboot/test/ctl/useragentCtl.java" />
+        <option value="$PROJECT_DIR$/spring-boot-redis/src/main/java/com/yin/springboot/redis/utils/JedisUtils.java" />
+        <option value="$PROJECT_DIR$/spring-boot-log/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spring-boot-log/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-log/src/main/resources/static/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-log/src/test/java/com/yin/springboot/log/SpringBootLogApplicationTests.java" />
+        <option value="$PROJECT_DIR$/spring-boot-log/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-test/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/spring-boot-web/src/main/java/WebSpringBoot.java" />
+        <option value="$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/WebSpringBoot.java" />
+        <option value="$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/entity/User.java" />
+        <option value="$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/config/ThymleafConfig.java" />
+        <option value="$PROJECT_DIR$/spring-boot-web/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-web/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/config/ShiroRealm.java" />
+        <option value="$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/config/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/entity/UserForm.java" />
+        <option value="$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/exception/AuthorationException.java" />
+        <option value="$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/exception/MyException.java" />
+        <option value="$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/exception/ServiceException.java" />
+        <option value="$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/ctl/LoginCtl.java" />
+        <option value="$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/jsonserilazation/DateSerilazation.java" />
+        <option value="$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/entity/UserVo.java" />
+        <option value="$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/ctl/IndexCtl.java" />
+        <option value="$PROJECT_DIR$/spring-boot-websocket/src/main/java/com/yin/springboot/websocket/websocket/WebSocket.java" />
+        <option value="$PROJECT_DIR$/spring-boot-websocket/src/main/resources/index.html" />
+        <option value="$PROJECT_DIR$/spring-boot-websocket/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spring-boot-websocket/src/main/java/com/yin/springboot/websocket/ctl/TestCtl.java" />
+        <option value="$PROJECT_DIR$/spring-boot-websocket/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-websocket/src/main/java/com/yin/springboot/websocket/config/WebSocketConfig.java" />
+        <option value="$PROJECT_DIR$/spring-boot-websocket/src/main/resources/static/index.html" />
+        <option value="$PROJECT_DIR$/spring-boot-config/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-config/src/main/java/com/yin/springbootconfig/config/config1.java" />
+        <option value="$PROJECT_DIR$/spring-boot-config/src/main/java/com/yin/springbootconfig/config/config2.java" />
+        <option value="$PROJECT_DIR$/spring-boot-config/src/main/java/com/yin/springbootconfig/config/ConfigActive.java" />
+        <option value="$PROJECT_DIR$/spring-boot-config/src/main/java/com/yin/springbootconfig/config/configMain.java" />
+        <option value="$PROJECT_DIR$/spring-boot-config/src/main/java/com/yin/springbootconfig/config/Config2.java" />
+        <option value="$PROJECT_DIR$/spring-boot-config/src/main/java/com/yin/springbootconfig/config/ConfigMain.java" />
+        <option value="$PROJECT_DIR$/spring-boot-config/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spring-boot-config/src/test/java/com/yin/springbootconfig/SpringBootConfigApplicationTests.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="855" />
+    <option name="y" value="484" />
+    <option name="width" value="760" />
+    <option name="height" value="572" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="spring-boot-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-beetlsql" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-boot-websocket/src/main/resources" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.yin.springboot.netty.client.client" />
+      <recent name="com.yin.springboot.weixin.pay.imagecode" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\spring-boot-examples\spring-boot-websocket\src\main\resources" />
+      <recent name="F:\spring-boot-examples\spring-boot-web\src\main\java\com\yin\web\config" />
+      <recent name="F:\spring-boot-examples\spring-boot-web\src\main\resources" />
+      <recent name="F:\spring-boot-examples\spring-boot-web\src\main\java\com\yin\web" />
+      <recent name="F:\spring-boot-examples\spring-boot-log\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yin.springboot.websocket.config" />
+      <recent name="com.yin.springboot.websocket.websocket" />
+      <recent name="com.yin.web.entity" />
+      <recent name="com.yin.web.exception" />
+      <recent name="com.yin.web" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\spring-boot-examples\spring-boot-websocket\src\main\resources\static" />
+      <recent name="F:\spring-boot-examples\spring-boot-websocket\src\main\resources" />
+      <recent name="F:\spring-boot-examples\spring-boot-websocket\src\main\resources\templates" />
+      <recent name="F:\spring-boot-examples\spring-boot-test\src\main\resources\static" />
+      <recent name="F:\spring-boot-examples\spring-boot-vue\src\main\resources\static" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.SpringBootConfigApplicationTests.contextLoads">
+    <configuration name="SpringBootConfigApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-config" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yin.springbootconfig.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yin.springbootconfig" />
+      <option name="MAIN_CLASS_NAME" value="com.yin.springbootconfig.SpringBootConfigApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootLogApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-log" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yin.springboot.log.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yin.springboot.log" />
+      <option name="MAIN_CLASS_NAME" value="com.yin.springboot.log.SpringBootLogApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootLogApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-log" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yin.springboot.log.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yin.springboot.log" />
+      <option name="MAIN_CLASS_NAME" value="com.yin.springboot.log.SpringBootLogApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootRedisApplicationTests.tttt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yin.springboot.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yin.springboot.redis" />
+      <option name="MAIN_CLASS_NAME" value="com.yin.springboot.redis.SpringBootRedisApplicationTests" />
+      <option name="METHOD_NAME" value="tttt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestReturnConfirm.send" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="spring-boot-product" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yin.springboot.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yin.springboot.product" />
+      <option name="MAIN_CLASS_NAME" value="com.yin.springboot.product.TestReturnConfirm" />
+      <option name="METHOD_NAME" value="send" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-common" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.common.CommonApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootBeetlsqlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-beetlsql" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springbootbeetlsql.SpringBootBeetlsqlApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootCloudSsoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-cloud-sso" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.cloud.sso.SpringBootCloudSsoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootCommonBaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-common-base" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.common.base.SpringBootCommonBaseApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootCommonCoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-common-core" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.common.core.SpringBootCommonCoreApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootCommonUtilsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-common-utils" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.common.utils.SpringBootCommonUtilsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-config" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springbootconfig.SpringBootConfigApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.consumer.SpringBootConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootDockerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-docker" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springbootdocker.SpringBootDockerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootElasticsearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-elasticsearch" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springbootelasticsearch.SpringBootElasticsearchApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootEmailApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-email" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.email.SpringBootEmailApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootFreemarkerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-freemarker" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.freemarker.SpringBootFreemarkerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootLogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-log" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.log.SpringBootLogApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootLoginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-login" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.login.SpringBootLoginApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootMybatisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-mybatis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.mybatis.SpringBootMybatisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootMybatisPlusApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-mybatis-plus" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.mybatis.plus.SpringBootMybatisPlusApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootNettyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-netty" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.netty.SpringBootNettyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootNettyClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-netty-client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.netty.client.SpringBootNettyClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootNettyServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-netty-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.netty.server.SpringBootNettyServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootOauthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-oauth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.oauth.SpringBootOauthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-product" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.product.SpringBootProductApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootQqLoginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-qq-login" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.qq.login.SpringBootQqLoginApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootRedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-redis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.redis.SpringBootRedisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootShiroApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-shiro" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.shiro.SpringBootShiroApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootSsoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-sso" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.sso.SpringBootSsoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootSwaggerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-swagger" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springbootswagger.SpringBootSwaggerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.test.SpringBootTestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootThreadApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-thread" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.thread.SpringBootThreadApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootUserCenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-user-center" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.user.center.SpringBootUserCenterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootUserClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-user-client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.user.client.SpringBootUserClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootVueApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-vue" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.vue.SpringBootVueApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootWebsocketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-websocket" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.websocket.SpringBootWebsocketApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootWeixinPayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-weixin-pay" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.springboot.weixin.pay.SpringBootWeixinPayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebSpringBoot (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.web.WebSpringBoot" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebSpringBoot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="WebSpringBoot" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZkApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zk" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yin.zk.ZkApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SpringBootConfigApplicationTests.contextLoads" />
+        <item itemvalue="Spring Boot.WebSpringBoot" />
+        <item itemvalue="JUnit.SpringBootLogApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.SpringBootLogApplicationTests" />
+        <item itemvalue="JUnit.SpringBootRedisApplicationTests.tttt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_FIELDS" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e758fd5a-7f27-4879-898f-3de660155d02" name="Default Changelist" comment="" />
+      <created>1562141156815</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562141156815</updated>
+      <workItem from="1562141161320" duration="4328000" />
+      <workItem from="1562148937839" duration="142000" />
+      <workItem from="1562149163952" duration="413000" />
+      <workItem from="1562149599342" duration="1759000" />
+      <workItem from="1562151615851" duration="8415000" />
+      <workItem from="1562204067757" duration="20619000" />
+      <workItem from="1562292046084" duration="16667000" />
+      <workItem from="1562372658572" duration="1695000" />
+      <workItem from="1562376463290" duration="11726000" />
+      <workItem from="1562423840424" duration="4583000" />
+      <workItem from="1562510187776" duration="675000" />
+      <workItem from="1562572602697" duration="6825000" />
+      <workItem from="1562631586521" duration="4745000" />
+      <workItem from="1562644400722" duration="2059000" />
+      <workItem from="1562646534871" duration="195000" />
+      <workItem from="1562646762267" duration="6261000" />
+      <workItem from="1562665657106" duration="246000" />
+      <workItem from="1562665940412" duration="839000" />
+      <workItem from="1562666823992" duration="753000" />
+      <workItem from="1562668212026" duration="267000" />
+      <workItem from="1562668516548" duration="9394000" />
+      <workItem from="1562720453904" duration="15399000" />
+      <workItem from="1562804459219" duration="30767000" />
+      <workItem from="1562893312988" duration="12222000" />
+      <workItem from="1562981738451" duration="21142000" />
+      <workItem from="1563065055493" duration="33369000" />
+      <workItem from="1563151067276" duration="23051000" />
+      <workItem from="1563239749034" duration="10490000" />
+      <workItem from="1563323180682" duration="16578000" />
+      <workItem from="1563416232704" duration="4157000" />
+      <workItem from="1563505481348" duration="732000" />
+      <workItem from="1563605710016" duration="5134000" />
+      <workItem from="1563625588537" duration="2953000" />
+      <workItem from="1563676058336" duration="3610000" />
+      <workItem from="1563692737026" duration="5083000" />
+      <workItem from="1563762122828" duration="2162000" />
+      <workItem from="1563773645789" duration="4939000" />
+      <workItem from="1563810976769" duration="2667000" />
+      <workItem from="1563853085969" duration="837000" />
+      <workItem from="1563866626984" duration="609000" />
+      <workItem from="1563885542466" duration="5070000" />
+      <workItem from="1563957790412" duration="5459000" />
+      <workItem from="1564149091362" duration="3874000" />
+      <workItem from="1564154890421" duration="1176000" />
+      <workItem from="1564196320065" duration="2668000" />
+      <workItem from="1564280599769" duration="5068000" />
+      <workItem from="1564361007139" duration="1389000" />
+      <workItem from="1564366741205" duration="2172000" />
+      <workItem from="1564386572415" duration="3346000" />
+      <workItem from="1564390356599" duration="597000" />
+      <workItem from="1564392766248" duration="5966000" />
+      <workItem from="1564448824778" duration="22848000" />
+      <workItem from="1564484690822" duration="169000" />
+      <workItem from="1564484905610" duration="5021000" />
+      <workItem from="1564540721621" duration="8433000" />
+      <workItem from="1564629230395" duration="5746000" />
+      <workItem from="1564708498439" duration="6607000" />
+      <workItem from="1564747152918" duration="1101000" />
+      <workItem from="1564748514329" duration="345000" />
+      <workItem from="1564748982962" duration="641000" />
+      <workItem from="1564821868590" duration="5123000" />
+      <workItem from="1564886188162" duration="14726000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="SpringBootLogApplicationTests_contextLoads - 2019.08.04 at 10h 58m 39s.xml">
+      <configuration name="SpringBootLogApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringBootLogApplicationTests - 2019.08.04 at 11h 02m 31s.xml">
+      <configuration name="SpringBootLogApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringBootLogApplicationTests_contextLoads - 2019.08.04 at 11h 03m 34s.xml">
+      <configuration name="SpringBootLogApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringBootLogApplicationTests_contextLoads - 2019.08.04 at 11h 05m 15s.xml">
+      <configuration name="SpringBootLogApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringBootLogApplicationTests_contextLoads - 2019.08.04 at 11h 23m 16s.xml">
+      <configuration name="SpringBootLogApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringBootLogApplicationTests_contextLoads - 2019.08.04 at 11h 23m 51s.xml">
+      <configuration name="SpringBootLogApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringBootLogApplicationTests_contextLoads - 2019.08.04 at 11h 28m 08s.xml">
+      <configuration name="SpringBootLogApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringBootLogApplicationTests_contextLoads - 2019.08.04 at 11h 29m 48s.xml">
+      <configuration name="SpringBootLogApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringBootLogApplicationTests_contextLoads - 2019.08.04 at 11h 30m 37s.xml">
+      <configuration name="SpringBootLogApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringBootConfigApplicationTests_contextLoads - 2019.08.04 at 22h 08m 56s.xml">
+      <configuration name="SpringBootConfigApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="406052000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.70743036" visible="true" weight="0.22014925" />
+      <window_info id="Structure" order="1" sideWeight="0.29256967" side_tool="true" visible="true" weight="0.22014925" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32792208" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3008658" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.28896105" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32900432" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32900432" />
+      <window_info anchor="bottom" id="Docker" order="9" weight="0.32900432" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5042644" side_tool="true" weight="0.35064936" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32900432" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.49573562" weight="0.2608225" />
+      <window_info anchor="bottom" id="Tail" order="15" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.32792208" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.122068234" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.24626866" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" sideWeight="0.28380635" weight="0.26545843" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32995737" />
+      <window_info anchor="right" id="Mybatis datasource" order="10" side_tool="true" />
+      <window_info anchor="right" id="MyBatisCode" order="11" sideWeight="0.7161937" side_tool="true" weight="0.21002132" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46411484" visible="true" weight="0.26012793" />
+      <window_info id="Structure" order="1" sideWeight="0.53588516" side_tool="true" weight="0.25799572" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286334" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3008658" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.28896105" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32900432" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32900432" />
+      <window_info anchor="bottom" id="Docker" order="9" weight="0.32900432" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5042644" side_tool="true" weight="0.35064936" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32900432" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.49573562" weight="0.32142857" />
+      <window_info anchor="bottom" id="Tail" order="15" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.32792208" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.20042644" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.24626866" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" sideWeight="0.28380635" weight="0.26545843" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32995737" />
+      <window_info anchor="right" id="Mybatis datasource" order="10" side_tool="true" />
+      <window_info anchor="right" id="MyBatisCode" order="11" sideWeight="0.7161937" side_tool="true" weight="0.21002132" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-redis/src/main/java/com/yin/springboot/redis/service/RedisService.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-redis/src/main/java/com/yin/springboot/redis/ctl/RedisCtl.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-elasticsearch/src/test/java/com/yin/springbootelasticsearch/ElasticsearchTemplateTest.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-beetlsql/src/test/java/com/yin/springbootbeetlsql/ReformTest.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-beetlsql/src/main/java/com/yin/springbootbeetlsql/ctl/UserCtl.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-beetlsql/src/test/java/com/yin/springbootbeetlsql/ReformTest.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.7.RELEASE/spring-beans-5.1.7.RELEASE.jar!/org/springframework/beans/BeanUtils.class</url>
+          <line>365</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-beetlsql/src/test/java/com/yin/springbootbeetlsql/ReformTest.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-beetlsql/src/main/java/com/yin/springbootbeetlsql/ctl/UserCtl.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-user-center/src/main/java/com/yin/springboot/user/center/config/service/UserDetailsServiceImpl.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-user-center/src/main/java/com/yin/springboot/user/center/config/WebSecurityConfiguration.java</url>
+          <line>111</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-user-center/src/main/java/com/yin/springboot/user/center/config/WebSecurityConfiguration.java</url>
+          <line>105</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-user-client/src/main/java/com/yin/springboot/user/client/ctl/ViewCtl.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-user-client/src/main/java/com/yin/springboot/user/client/filter/MyFiler.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-user-client/src/main/java/com/yin/springboot/user/client/filter/MyFiler.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-mybatis/src/test/java/com/yin/springboot/mybatis/SpringBootMybatisApplicationTests.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-mybatis/src/test/java/com/yin/springboot/mybatis/SpringBootMybatisApplicationTests.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-user-center/src/main/java/com/yin/springboot/user/center/ctl/NocosProviderCtl.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.8/pagehelper-5.1.8.jar!/com/github/pagehelper/PageInterceptor.class</url>
+          <line>99</line>
+          <properties />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.4/pagehelper-5.1.4.jar!/com/github/pagehelper/PageInterceptor.class</url>
+          <line>127</line>
+          <properties />
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.4/pagehelper-5.1.4.jar!/com/github/pagehelper/QueryInterceptor.class</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/BaseExecutor.java</url>
+          <line>135</line>
+          <properties />
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/loader/ResultLoader.java</url>
+          <line>80</line>
+          <properties />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-mybatis/src/main/java/com/yin/springboot/mybatis/plugin/MyResultHandler.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-mybatis/src/main/java/com/yin/springboot/mybatis/controller/TestPagehelperCtl.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/resultset/DefaultResultSetHandler.java</url>
+          <line>141</line>
+          <properties />
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/BaseExecutor.java</url>
+          <line>333</line>
+          <properties />
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/SimpleExecutor.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/statement/SimpleStatementHandler.java</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-mybatis/src/main/java/com/yin/springboot/mybatis/plugin/MybatisPlugin.java</url>
+          <line>90</line>
+          <properties />
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-weixin-pay/src/main/java/com/yin/springboot/weixin/pay/ctl/ImageCtl.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-netty/spring-boot-netty-client/src/main/java/com/yin/springboot/netty/client/client/ClientHandler.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-netty/spring-boot-netty-server/src/main/java/com/yin/springboot/netty/server/server/ServerHandler.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-netty/spring-boot-netty-client/src/main/java/com/yin/springboot/netty/client/client/NettyClient.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-netty/spring-boot-netty-client/src/main/java/com/yin/springboot/netty/client/client/NettyClient.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-netty/spring-boot-netty-client/src/main/java/com/yin/springboot/netty/client/client/ClientHandler.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-redis/src/test/java/com/yin/springboot/redis/SpringBootRedisApplicationTests.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-commons/spring-boot-common-utils/src/main/java/com/yin/springboot/common/utils/md5/Md5Utils.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-product/src/test/java/com/yin/springboot/product/TestReturnConfirm.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-product/src/test/java/com/yin/springboot/product/TestReturnConfirm.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-product/src/test/java/com/yin/springboot/product/TestReturnConfirm.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-product/src/main/java/com/yin/springboot/product/utils/ConnectionUtils.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-mybatis-plus/src/test/java/com/yin/springboot/mybatis/plus/SpringBootMybatisPlusApplicationTests.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-mybatis-plus/src/test/java/com/yin/springboot/mybatis/plus/SpringBootMybatisPlusApplicationTests.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/yin/springboot/shiro/ctl/UserCtl.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/yin/springboot/shiro/ctl/UserCtl.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/yin/springboot/shiro/ctl/LoginCtl.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-test/src/test/java/com/yin/springboot/test/SpringBootTestApplicationTests.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-commons/spring-boot-common-utils/src/test/java/com/yin/springboot/common/utils/SpringBootCommonUtilsApplicationTests.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-commons/spring-boot-common-utils/src/main/java/com/yin/springboot/common/utils/bean/SpringBeanUtils.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.3.RELEASE/spring-security-oauth2-2.3.3.RELEASE.jar!/org/springframework/security/oauth2/provider/token/DefaultTokenServices.class</url>
+          <line>51</line>
+          <properties class="org.springframework.security.oauth2.provider.token.DefaultTokenServices" method="createAccessToken">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>session.getAttribute(&quot;41DC159B336173DBB030C7CE403FB69C&quot;)</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>session.getAttribute(&quot;41DC159B336173DBB030C7CE403FB69C&quot;);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>session</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>context.getResultObject().getClass()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>context.getResultObject().getClass().</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>orders.iterator().next()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>orders.iterator()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>session.getAttribute(&quot;41DC159B336173DBB030C7CE403FB69C&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>session.getAttribute(&quot;3651BEB07247B89FFCD952663E341610&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.getCookies()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new UserService().toVOs(pos)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>writeMethod.getName().substring(4)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/spring-boot-log/src/main/java/com/yin/springboot/log/SpringBootLogApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-log/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-log/src/main/resources/static/app.err.2019-08-04.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-log/src/main/resources/static/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="42" column="99" selection-start-line="42" selection-start-column="99" selection-end-line="42" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-log/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-log/src/test/java/com/yin/springboot/log/SpringBootLogApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-log/src/main/resources/static/log_info.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-log/src/main/resources/static/info/log-info-2019-08-04.0.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-log/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-test/src/main/java/com/yin/springboot/test/ctl/useragentCtl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-test/src/main/java/com/yin/springboot/test/SpringBootTestApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-test/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-beetlsql/src/main/java/com/yin/springbootbeetlsql/SpringBootBeetlsqlApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="9" column="73" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-web/src/main/java/WebSpringBoot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-web/src/main/resources/templates/add.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="50" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-web/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/config/ThymleafConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/yin/springboot/shiro/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/WebSpringBoot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/config/ShiroRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1379">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1239">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/exception/AuthorationException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/exception/MyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/exception/ServiceException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/ctl/LoginCtl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-396">
+          <caret line="37" column="66" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/ctl/UserCtl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/entity/UserForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="13" column="71" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/jsonserilazation/DateSerilazation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/entity/UserVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-web/src/main/java/com/yin/web/ctl/IndexCtl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-websocket/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-websocket/src/main/java/com/yin/springboot/websocket/SpringBootWebsocketApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-websocket/src/main/resources/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-websocket/src/main/java/com/yin/springboot/websocket/ctl/TestCtl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-websocket/src/main/java/com/yin/springboot/websocket/websocket/WebSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-437">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-websocket/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="37" column="25" selection-start-line="33" selection-start-column="9" selection-end-line="37" selection-end-column="25" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-websocket/src/main/java/com/yin/springboot/websocket/config/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-websocket/src/main/resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-beetlsql/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="28" column="21" selection-start-line="24" selection-start-column="5" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-config/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-config/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-config/src/test/java/com/yin/springbootconfig/SpringBootConfigApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#514#515#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-config/src/main/java/com/yin/springbootconfig/config/Config1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-config/src/main/java/com/yin/springbootconfig/config/Config2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-config/src/main/java/com/yin/springbootconfig/config/ConfigActive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-config/src/main/java/com/yin/springbootconfig/config/ConfigMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>spring-boot-examples</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

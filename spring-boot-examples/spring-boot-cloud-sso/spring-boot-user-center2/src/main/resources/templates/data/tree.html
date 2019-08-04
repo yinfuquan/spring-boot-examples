@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../static/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/admin.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/layui/css/layui.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/fastui.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/layui/css/dtree.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/layui/font/treefont/dtreefont.css"/>
+</head>
+
+<body>
+<div class="fastui-content-style layui-row">
+    <div class="fastui-tree-bg layui-col-xs2">
+        <ul id="dataTree2" class="dtree" data-id="0"></ul>
+    </div>
+</div>
+<script src="../../static/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    layui.extend({
+        dtree: '../../static/layui/ext/dtree'
+    }).use(['element', 'layer', 'dtree'], function () {
+        var element = layui.element,
+            layer = layui.layer,
+            dtree = layui.dtree,
+            $ = layui.$;
+        dtree.render({
+            elem: "#dataTree2",
+            ficon: "1",
+            icon: "-1",
+            dot: false,
+            checkbarType: 'self',
+            toolbar: true,
+            toolbarWay: 'fixed',
+            toolbarFun: {
+                loadToolbarBefore: function (buttons) {
+                    console.log(buttons);
+                    if (param.isLeaf) {
+                        buttons.addToolbar = "";
+                    }
+                    return buttons;
+                }
+            },
+            data: [{
+                "id": "001",
+                "title": "湖南省",
+                "checkArr": [{
+                    "type": "0",
+                    "isChecked": "0"
+                }],
+                "parentId": "0",
+            },
+                {
+                    "id": "002",
+                    "title": "湖北省",
+                    "checkArr": [{
+                        "type": "0",
+                        "isChecked": "0"
+                    }],
+                    "parentId": "0"
+                },
+                {
+                    "id": "003",
+                    "title": "广东省",
+                    "checkArr": [{
+                        "type": "0",
+                        "isChecked": "0"
+                    }],
+                    "parentId": "0"
+                },
+                {
+                    "id": "004",
+                    "title": "浙江省",
+                    "checkArr": [{
+                        "type": "0",
+                        "isChecked": "0"
+                    }],
+                    "parentId": "0"
+                },
+                {
+                    "id": "005",
+                    "title": "福建省",
+                    "checkArr": [{
+                        "type": "0",
+                        "isChecked": "0"
+                    }],
+                    "parentId": "0"
+                },
+                {
+                    "id": "001001",
+                    "title": "长沙市",
+                    "checkArr": [{
+                        "type": "0",
+                        "isChecked": "0"
+                    }],
+                    "parentId": "001"
+                },
+                {
+                    "id": "001002",
+                    "title": "株洲市",
+                    "checkArr": [{
+                        "type": "0",
+                        "isChecked": "0"
+                    }],
+                    "parentId": "001"
+                },
+                {
+                    "id": "001003",
+                    "title": "湘潭市",
+                    "checkArr": [{
+                        "type": "0",
+                        "isChecked": "0"
+                    }],
+                    "parentId": "001"
+                },
+                {
+                    "id": "001004",
+                    "title": "衡阳市",
+                    "checkArr": [{
+                        "type": "0",
+                        "isChecked": "0"
+                    }],
+                    "parentId": "001"
+                },
+                {
+                    "id": "001005",
+                    "title": "郴州市",
+                    "checkArr": [{
+                        "type": "0",
+                        "isChecked": "0"
+                    }],
+                    "parentId": "001"
+                }
+            ],
+            dataStyle: "layuiStyle",
+            dataFormat: "list",
+            response: {
+                message: "msg",
+                statusCode: 0
+            },
+            checkbar: true
+        });
+    });
+</script>
+</body>
+
+</html>

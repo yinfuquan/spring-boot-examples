@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+    var websocket = null;
+    if ('WebSocket' in window) {
+        websocket = new WebSocket('ws://localhost:8047/webSocket');
+    } else {
+        alert('该浏览器不支持websocket')
+    }
+
+    websocket.onopen = function (ev) {
+        console.log('建立连接')
+    }
+
+    websocket.onclose = function (ev) {
+        console.log('连接关闭')
+    }
+
+    websocket.onmessage = function (ev) {
+        console.log('收到消息：' + event.data)
+        //提醒
+        alert('websocket收到消息！');
+    }
+
+    websocket.onerror = function (ev) {
+        alert('websocket:'+event.data)
+    }
+
+    window.onbeforeunload = function (ev) {
+        websocket.close()
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-product" />
+        <module name="spring-boot-common" />
+        <module name="spring-boot-thread" />
+        <module name="demo" />
+        <module name="spring-boot-cloud-sso" />
+        <module name="spring-boot-vue" />
+        <module name="spring-boot-user-center (1)" />
+        <module name="spring-boot-netty-server" />
+        <module name="spring-boot-redis" />
+        <module name="spring-boot-netty-client" />
+        <module name="spring-boot-elasticsearch" />
+        <module name="spring-boot-rabbitmq" />
+        <module name="spring-boot-common-core" />
+        <module name="spring-boot-common-base" />
+        <module name="spring-boot-shiro" />
+        <module name="spring-boot-weixin-pay" />
+        <module name="spring-boot-swagger" />
+        <module name="spring-boot-commons" />
+        <module name="spring-boot-mybatis" />
+        <module name="spring-boot-freemarker" />
+        <module name="spring-boot-login" />
+        <module name="spring-boot-user-center" />
+        <module name="spring-boot-beetlsql" />
+        <module name="spring-boot-user-client" />
+        <module name="spring-boot-common-utils" />
+        <module name="spring-boot-log" />
+        <module name="spring-boot-websocket" />
+        <module name="spring-boot-netty" />
+        <module name="spring-boot-email" />
+        <module name="zk" />
+        <module name="spring-boot-consumer" />
+        <module name="spring-boot-qq-login" />
+        <module name="spring-boot-web" />
+        <module name="spring-boot-test" />
+        <module name="spring-boot-docker" />
+        <module name="spring-boot-config" />
+        <module name="spring-boot-mybatis-plus" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
+      <module name="spring-boot-beetlsql" target="1.8" />
+      <module name="spring-boot-cloud-sso" target="1.8" />
+      <module name="spring-boot-common" target="1.8" />
+      <module name="spring-boot-common-base" target="1.8" />
+      <module name="spring-boot-common-core" target="1.8" />
+      <module name="spring-boot-common-utils" target="1.8" />
+      <module name="spring-boot-commons" target="1.8" />
+      <module name="spring-boot-config" target="1.8" />
+      <module name="spring-boot-consumer" target="1.8" />
+      <module name="spring-boot-docker" target="1.8" />
+      <module name="spring-boot-elasticsearch" target="1.8" />
+      <module name="spring-boot-email" target="1.8" />
+      <module name="spring-boot-examples" target="1.8" />
+      <module name="spring-boot-freemarker" target="1.8" />
+      <module name="spring-boot-log" target="1.8" />
+      <module name="spring-boot-login" target="1.8" />
+      <module name="spring-boot-mybatis" target="1.8" />
+      <module name="spring-boot-mybatis-plus" target="1.8" />
+      <module name="spring-boot-netty" target="1.8" />
+      <module name="spring-boot-netty-client" target="1.8" />
+      <module name="spring-boot-netty-server" target="1.8" />
+      <module name="spring-boot-oauth" target="1.8" />
+      <module name="spring-boot-product" target="1.8" />
+      <module name="spring-boot-qq-login" target="1.8" />
+      <module name="spring-boot-rabbitmq" target="1.8" />
+      <module name="spring-boot-redis" target="1.8" />
+      <module name="spring-boot-shiro" target="1.8" />
+      <module name="spring-boot-sso" target="1.8" />
+      <module name="spring-boot-swagger" target="1.8" />
+      <module name="spring-boot-test" target="1.8" />
+      <module name="spring-boot-thread" target="1.8" />
+      <module name="spring-boot-user-center" target="1.8" />
+      <module name="spring-boot-user-center (1)" target="1.8" />
+      <module name="spring-boot-user-client" target="1.8" />
+      <module name="spring-boot-vue" target="1.8" />
+      <module name="spring-boot-web" target="1.8" />
+      <module name="spring-boot-websocket" target="1.8" />
+      <module name="spring-boot-weixin-pay" target="1.8" />
+      <module name="spring-cloud-user-center" target="1.8" />
+      <module name="zk" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
+      <module name="spring-boot-beetlsql" options="-parameters" />
+      <module name="spring-boot-cloud-sso" options="-parameters" />
+      <module name="spring-boot-common" options="-parameters" />
+      <module name="spring-boot-common-base" options="-parameters" />
+      <module name="spring-boot-common-core" options="-parameters" />
+      <module name="spring-boot-common-utils" options="-parameters" />
+      <module name="spring-boot-commons" options="-parameters" />
+      <module name="spring-boot-config" options="-parameters" />
+      <module name="spring-boot-consumer" options="-parameters" />
+      <module name="spring-boot-docker" options="-parameters" />
+      <module name="spring-boot-elasticsearch" options="-parameters" />
+      <module name="spring-boot-email" options="-parameters" />
+      <module name="spring-boot-examples" options="-parameters" />
+      <module name="spring-boot-freemarker" options="-parameters" />
+      <module name="spring-boot-log" options="-parameters" />
+      <module name="spring-boot-login" options="-parameters" />
+      <module name="spring-boot-mybatis" options="-parameters" />
+      <module name="spring-boot-mybatis-plus" options="-parameters" />
+      <module name="spring-boot-netty" options="-parameters" />
+      <module name="spring-boot-netty-client" options="-parameters" />
+      <module name="spring-boot-netty-server" options="-parameters" />
+      <module name="spring-boot-oauth" options="-parameters" />
+      <module name="spring-boot-product" options="-parameters" />
+      <module name="spring-boot-qq-login" options="-parameters" />
+      <module name="spring-boot-rabbitmq" options="-parameters" />
+      <module name="spring-boot-redis" options="-parameters" />
+      <module name="spring-boot-shiro" options="-parameters" />
+      <module name="spring-boot-sso" options="-parameters" />
+      <module name="spring-boot-swagger" options="-parameters" />
+      <module name="spring-boot-test" options="-parameters" />
+      <module name="spring-boot-thread" options="-parameters" />
+      <module name="spring-boot-user-center" options="-parameters" />
+      <module name="spring-boot-user-center (1)" options="-parameters" />
+      <module name="spring-boot-user-client" options="-parameters" />
+      <module name="spring-boot-vue" options="-parameters" />
+      <module name="spring-boot-web" options="-parameters" />
+      <module name="spring-boot-websocket" options="-parameters" />
+      <module name="spring-boot-weixin-pay" options="-parameters" />
+      <module name="spring-cloud-user-center" options="-parameters" />
+      <module name="zk" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../static/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/admin.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/layui/css/layui.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/fastui.css"/>
+</head>
+<body>
+<div class="fastui-screen">
+    <header class="fastui-header">
+        <div class="fastui-logo">
+            <img src="../../static/images/logo.png"/>
+            <span>财务中台</span>
+        </div>
+        <ul class="layui-nav fastui-menubar">
+            <li class="layui-nav-item">
+                <a href="../index.html">首页</a>
+            </li>
+            <li class="layui-nav-item layui-this">
+                <a href="../single.html">单页面</a>
+            </li>
+            <!--<li class="layui-nav-item"><span></span></li>-->
+            <li class="layui-nav-item">
+                <a href="../window.html">多窗口</a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="../ucproject/ucuser.html">用户中心</a>
+            </li>
+        </ul>
+        <ul class="layui-nav fastui-usercenter" lay-filter="user_operation">
+            <li class="layui-nav-item fastui-product">
+                <a href="javascript:void(0);"><i class="layui-icon">&#xe653;</i>我的应用</a>
+            </li>
+            <li class="layui-nav-item fastui-product">
+                <a href="javascript:void(0);"><i class="layui-icon">&#xe66f;</i>龙斌</a>
+                <dl class="layui-nav-child">
+                    <dd>
+                        <a href="#">个人设置</a>
+                    </dd>
+                    <dd>
+                        <a href="login.html">退出系统</a>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    </header>
+    <div class="fastui-twomenu-bg">
+        <ul class="fastui-menu-wrapper">
+            <li><a href="../single.html">首页</a></li>
+            <li>
+                <a href="#">表格<i class="layui-icon">&#xe625;</i></a>
+                <ul class="fastui-two-menu">
+                    <li><a href="table.html">表格</a></li>
+                    <li><a href="table1.html">大表格</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">表单<i class="layui-icon">&#xe625;</i></a>
+                <ul class="fastui-two-menu">
+                    <li><a href="form.html">表单</a></li>
+                    <li><a href="contract.html">合同</a></li>
+                    <li><a href="form1.html">大表单</a></li>
+                    <li><a href="form2.html">表单帮助</a></li>
+                </ul>
+            </li>
+            <li><a href="bill.html">付款单</a></li>
+            <li><a href="#">订单</a></li>
+            <li>
+                <a href="#">错误页面<i class="layui-icon">&#xe625;</i></a>
+                <ul class="fastui-two-menu">
+                    <li><a href="404.html">404</a></li>
+                    <li><a href="500.html">500</a></li>
+                    <li><a href="nodata.html">无权限</a></li>
+                    <li><a href="load.html">加载中</a></li>
+                    <li><a href="develop.html">开发中</a></li>
+                </ul>
+            </li>
+            <li><span></span></li>
+            <li><a href="#">记录</a></li>
+        </ul>
+    </div>
+    <div class="fastui-content-style">
+        <div class="fastui-erro-html">
+            <img class="fastui-erro-url" src="../../static/images/500.png"/>
+            <p>好晕呀！数据错误了，联系管理员哦!</p>
+            <div class="fastui-erro-con">
+                <a href="#">查看错误信息</a>
+                <div class="fastui-erro-show">
+                    com.smthit.lang.exception.ServiceException: 测试
+                    <br>at ai.bell.uc.admin.web.exception.ErrorCtl.error(ErrorCtl.java:20)
+                    <br>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                    <br>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+                    <br>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                    <br>at java.lang.reflect.Method.invoke(Method.java:498)
+                    <br>at
+                    org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+                    <br>at
+                    org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+                    <br>at
+                    org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+                    <br>at
+                    org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+                    <br>at
+                    org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+                    <br>at
+                    org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+                    <br>at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+                    <br>at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+                    <br>at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+                    <br>at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+                    <br>at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+                    <br>at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+                    <br>at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+                    <br>at
+                    org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+                    <br>at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+                    <br>at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+                    <br>at
+                    org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+                    <br>at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+                    <br>at
+                    org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+                    <br>at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+                    <br>at
+                    org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+                    <br>at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+                    <br>at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+                    <br>at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+                    <br>at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+                    <br>at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+                    <br>at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+                    <br>at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+                    <br>at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+                    <br>at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+                    <br>at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+                    <br>at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+                    <br>at
+                    org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+                    <br>at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+                    <br>at
+                    org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+                    <br>at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+                    <br>at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+                    <br>at
+                    org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+                    <br>at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+                    <br>at
+                    org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:111)
+                    <br>at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+                    <br>at
+                    org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+                    <br>at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+                    <br>at
+                    org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+                    <br>at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+                    <br>at
+                    org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+                    <br>at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+                    <br>at
+                    org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+                    <br>at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+                    <br>at
+                    org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+                    <br>at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+                    <br>at
+                    org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+                    <br>at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+                    <br>at
+                    org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+                    <br>at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+                    <br>at
+                    org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+                    <br>at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+                    <br>at
+                    org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+                    <br>at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+                    <br>at
+                    org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+                    <br>at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+                    <br>at
+                    org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+                    <br>at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+                    <br>at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+                    <br>at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+                    <br>at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+                    <br>at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+                    <br>at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+                    <br>at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+                    <br>at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+                    <br>at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+                    <br>at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+                    <br>at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+                    <br>at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+                    <br>at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+                    <br>at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+                    <br>at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+                    <br>at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+                    <br>at java.lang.Thread.run(Thread.java:748)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../static/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    layui.use(['jquery'], function ($) {
+        $(".fastui-menu-wrapper li").hover(function () {
+            $(this).find(".fastui-two-menu").stop().slideDown(200)
+        }, function () {
+            $(this).find(".fastui-two-menu").stop().slideUp(200)
+        });
+
+        $(".fastui-erro-con a").click(function () {
+            $(".fastui-erro-show").toggle();
+        })
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<div class="fastui-content-style">
+    <table class="layui-hide" id="fastui-comtable"></table>
+</div>
+<script type="text/javascript">
+    layui.use('table', function () {
+        var table = layui.table;
+
+        table.render({
+            elem: '#fastui-comtable'
+            , size: 'sm'
+            , cellMinWidth: 80
+            , cols: [[
+                {field: 'id', title: 'ID'}
+                , {field: 'username', title: '用户名'}
+                , {field: 'sex', title: '性别'}
+                , {field: 'city', title: '城市'}
+                , {field: 'sign', title: '签名'}
+                , {field: 'classify', title: '职业'}
+                , {field: 'experience', title: '积分'}
+                , {field: 'score', title: '评分'}
+                , {field: 'wealth', title: '财富'}
+            ]]
+            , data: [
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100',
+                    'wealth': '学富五车'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100',
+                    'wealth': '学富五车'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100',
+                    'wealth': '学富五车'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100',
+                    'wealth': '学富五车'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100',
+                    'wealth': '学富五车'
+                },
+                {
+                    'id': '1',
+                    'username': 'bell',
+                    'sex': '女',
+                    'city': '北京',
+                    'sign': '我是个说故事的男孩子，愿你是个爱听故事的女孩儿',
+                    'classify': '程序员',
+                    'experience': '33',
+                    'score': '100',
+                    'wealth': '学富五车'
+                },
+            ]
+            , page: true
+        });
+    });
+</script>

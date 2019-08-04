@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>FastUI</title>
+    <link rel="stylesheet" type="text/css" href="../../static/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/admin.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/layui/css/layui.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/fastui.css"/>
+</head>
+
+<body>
+<div class="fastui-screen">
+    <header class="fastui-header">
+        <div class="fastui-logo">
+            <img src="../../static/images/logo.png"/>
+            <span>财务中台</span>
+        </div>
+        <ul class="layui-nav fastui-menubar">
+            <li class="layui-nav-item">
+                <a href="ucuser.html">我的</a>
+            </li>
+            <li class="layui-nav-item layui-this">
+                <a href="appadmin.html">管理</a>
+            </li>
+        </ul>
+        <ul class="layui-nav fastui-usercenter" lay-filter="user_operation">
+            <li class="layui-nav-item fastui-product">
+                <a href="javascript:void(0);"><i class="layui-icon">&#xe653;</i>我的应用</a>
+            </li>
+            <li class="layui-nav-item fastui-product">
+                <a href="javascript:void(0);"><i class="layui-icon">&#xe66f;</i>龙斌</a>
+                <dl class="layui-nav-child">
+                    <dd>
+                        <a href="#">个人设置</a>
+                    </dd>
+                    <dd>
+                        <a href="login.html">退出系统</a>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    </header>
+    <div class="fastui-twomenu-bg">
+        <ul class="fastui-menu-wrapper">
+            <li><a href="appadmin.html">应用管理</a></li>
+            <li><a href="javascrpt:;">用户管理</a></li>
+        </ul>
+    </div>
+    <div class="fastui-single-content">
+        <div class="layui-row layui-col-space20">
+            <div class="layui-col-xs12">
+                <div class="layui-card">
+                    <div class="layui-card-header fastui-card-header">应用管理</div>
+                    <div class="layui-card-body">
+                        表格
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fastui-footer">
+				<span class="left">
+				  <a href=""><i class="layui-icon">&#xe68e;</i>首页</a>
+				  <span>&gt;</span>
+				  <a href="">国际新闻</a>
+				  <span>&gt;</span>
+				  <a href="">亚太地区</a>
+				</span>
+        <span class="right">财务中台管理系统V1.0.0 Build 4564</span>
+    </div>
+</div>
+</body>
+<script src="../../static/layui/layui.js"></script>
+<script type="text/javascript">
+    layui.use(['jquery'], function ($) {
+        $(".fastui-menu-wrapper li").hover(function () {
+            $(this).find(".fastui-two-menu").stop().slideDown(200)
+        }, function () {
+            $(this).find(".fastui-two-menu").stop().slideUp(200)
+        });
+
+    });
+</script>
+
+</html>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.6.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.yin</groupId>
+    <artifactId>spring-boot-docker</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>spring-boot-docker</name>
+    <description>Demo project for Spring Boot</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <!-- 添加docker-maven插件 -->
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>0.4.13</version>
+                <!-- 在package时构建镜像 -->
+                <!--                <executions>-->
+                <!--                    <execution>-->
+                <!--                        <id>build-image</id>-->
+                <!--                        <phase>package</phase>-->
+                <!--                        <goals>-->
+                <!--                            <goal>build</goal>-->
+                <!--                        </goals>-->
+                <!--                    </execution>-->
+                <!--                </executions>-->
+
+
+
+                <!--                <configuration>-->
+                <!--                    &lt;!&ndash; 允许重复构建相同标签的镜像 &ndash;&gt;-->
+                <!--                    <forceTags>true</forceTags>-->
+
+
+                <!--                    <imageName>${project.artifactId}:${project.version}</imageName>-->
+
+                <!--                    &lt;!&ndash;                    <imageName>http://192.168.220.169:5000/v2/test:0.0.1-SNAPSHOT</imageName>&ndash;&gt;-->
+                <!--                    <baseImage>java</baseImage>-->
+                <!--                    &lt;!&ndash; 指定仓库地址 &ndash;&gt;-->
+                <!--                    &lt;!&ndash;                    <dockerHost>http://192.168.220.169:5000/v2</dockerHost>&ndash;&gt;-->
+                <!--                    &lt;!&ndash;                    <registryUrl>http://192.168.220.169:5000/v2/</registryUrl>&ndash;&gt;-->
+                <!--                    &lt;!&ndash;                    <dockerCertPath>docker</dockerCertPath>&ndash;&gt;-->
+                <!--                    &lt;!&ndash;                    <imageTags>&ndash;&gt;-->
+                <!--                    &lt;!&ndash;                        <imageTag>0.0.1-SNAPSHOT</imageTag>&ndash;&gt;-->
+                <!--                    &lt;!&ndash;                    </imageTags>&ndash;&gt;-->
+                <!--                    <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>-->
+                <!--                    <resources>-->
+                <!--                        <resource>-->
+                <!--                            <targetPath>/</targetPath>-->
+                <!--                            <directory>${project.build.directory}</directory>-->
+                <!--                            <include>${project.build.finalName}.jar</include>-->
+                <!--                        </resource>-->
+                <!--                    </resources>-->
+                <!--                    &lt;!&ndash; 推送镜像，与setting.xml中server.id一致 &ndash;&gt;-->
+                <!--                    &lt;!&ndash;                    <serverId>docker-registory</serverId>&ndash;&gt;-->
+                <!--                </configuration>-->
+
+
+
+                <configuration>
+                    <!-- 允许重复构建相同标签的镜像 -->
+                    <!--                    <forceTags>true</forceTags>-->
+
+
+                    <imageName>192.168.220.169:5000/${project.artifactId}:${project.version}</imageName>
+
+                    <baseImage>java</baseImage>
+
+                    <registryUrl>http://192.168.220.169:5000</registryUrl>
+
+                    <pushImage>true</pushImage>
+
+                    <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
+
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
+
+                    <dockerHost>http://192.168.220.169:2375</dockerHost>
+                </configuration>
+
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

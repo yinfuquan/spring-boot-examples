@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-beetlsql/spring-boot-beetlsql.iml" filepath="$PROJECT_DIR$/spring-boot-beetlsql/spring-boot-beetlsql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-cloud-sso.iml" filepath="$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-cloud-sso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-common/spring-boot-common.iml" filepath="$PROJECT_DIR$/spring-boot-common/spring-boot-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-commons/spring-boot-common-base/spring-boot-common-base.iml" filepath="$PROJECT_DIR$/spring-boot-commons/spring-boot-common-base/spring-boot-common-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-commons/spring-boot-common-core/spring-boot-common-core.iml" filepath="$PROJECT_DIR$/spring-boot-commons/spring-boot-common-core/spring-boot-common-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-commons/spring-boot-common-utils/spring-boot-common-utils.iml" filepath="$PROJECT_DIR$/spring-boot-commons/spring-boot-common-utils/spring-boot-common-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-commons/spring-boot-commons.iml" filepath="$PROJECT_DIR$/spring-boot-commons/spring-boot-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-config/spring-boot-config.iml" filepath="$PROJECT_DIR$/spring-boot-config/spring-boot-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-consumer/spring-boot-consumer.iml" filepath="$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-consumer/spring-boot-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-docker/spring-boot-docker.iml" filepath="$PROJECT_DIR$/spring-boot-docker/spring-boot-docker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-elasticsearch/spring-boot-elasticsearch.iml" filepath="$PROJECT_DIR$/spring-boot-elasticsearch/spring-boot-elasticsearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-email/spring-boot-email.iml" filepath="$PROJECT_DIR$/spring-boot-email/spring-boot-email.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-examples.iml" filepath="$PROJECT_DIR$/spring-boot-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-freemarker/spring-boot-freemarker.iml" filepath="$PROJECT_DIR$/spring-boot-freemarker/spring-boot-freemarker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-log/spring-boot-log.iml" filepath="$PROJECT_DIR$/spring-boot-log/spring-boot-log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-login/spring-boot-login.iml" filepath="$PROJECT_DIR$/spring-boot-login/spring-boot-login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis/spring-boot-mybatis.iml" filepath="$PROJECT_DIR$/spring-boot-mybatis/spring-boot-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis-plus/spring-boot-mybatis-plus.iml" filepath="$PROJECT_DIR$/spring-boot-mybatis-plus/spring-boot-mybatis-plus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-netty/spring-boot-netty.iml" filepath="$PROJECT_DIR$/spring-boot-netty/spring-boot-netty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-netty/spring-boot-netty-client/spring-boot-netty-client.iml" filepath="$PROJECT_DIR$/spring-boot-netty/spring-boot-netty-client/spring-boot-netty-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-netty/spring-boot-netty-server/spring-boot-netty-server.iml" filepath="$PROJECT_DIR$/spring-boot-netty/spring-boot-netty-server/spring-boot-netty-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-product/spring-boot-product.iml" filepath="$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-product/spring-boot-product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-qq-login/spring-boot-qq-login.iml" filepath="$PROJECT_DIR$/spring-boot-qq-login/spring-boot-qq-login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-rabbitmq.iml" filepath="$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" filepath="$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-shiro/spring-boot-shiro.iml" filepath="$PROJECT_DIR$/spring-boot-shiro/spring-boot-shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-swagger/spring-boot-swagger.iml" filepath="$PROJECT_DIR$/spring-boot-swagger/spring-boot-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-test/spring-boot-test.iml" filepath="$PROJECT_DIR$/spring-boot-test/spring-boot-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-thread/spring-boot-thread.iml" filepath="$PROJECT_DIR$/spring-boot-thread/spring-boot-thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-user-center/spring-boot-user-center.iml" filepath="$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-user-center/spring-boot-user-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-user-center2/spring-boot-user-center (1).iml" filepath="$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-user-center2/spring-boot-user-center (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-user-client/spring-boot-user-client.iml" filepath="$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-user-client/spring-boot-user-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-vue/spring-boot-vue.iml" filepath="$PROJECT_DIR$/spring-boot-vue/spring-boot-vue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-web/spring-boot-web.iml" filepath="$PROJECT_DIR$/spring-boot-web/spring-boot-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-websocket/spring-boot-websocket.iml" filepath="$PROJECT_DIR$/spring-boot-websocket/spring-boot-websocket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-weixin-pay/spring-boot-weixin-pay.iml" filepath="$PROJECT_DIR$/spring-boot-weixin-pay/spring-boot-weixin-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-zookeeper/zk.iml" filepath="$PROJECT_DIR$/spring-boot-zookeeper/zk.iml" />
+    </modules>
+  </component>
+</project>

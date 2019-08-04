@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../static/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/admin.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/layui/css/layui.css"/>
+    <link rel="stylesheet" type="text/css" href="../../static/css/fastui.css"/>
+</head>
+<body>
+<div class="fastui-screen">
+    <header class="fastui-header">
+        <div class="fastui-logo">
+            <img src="../../static/images/logo.png"/>
+            <span>财务中台</span>
+        </div>
+        <ul class="layui-nav fastui-menubar">
+            <li class="layui-nav-item">
+                <a href="../index.html">首页</a>
+            </li>
+            <li class="layui-nav-item layui-this">
+                <a href="../single.html">单页面</a>
+            </li>
+            <!--<li class="layui-nav-item"><span></span></li>-->
+            <li class="layui-nav-item">
+                <a href="../window.html">多窗口</a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="../ucproject/ucuser.html">用户中心</a>
+            </li>
+        </ul>
+        <ul class="layui-nav fastui-usercenter" lay-filter="user_operation">
+            <li class="layui-nav-item fastui-product">
+                <a href="javascript:void(0);"><i class="layui-icon">&#xe653;</i>我的应用</a>
+            </li>
+            <li class="layui-nav-item fastui-product">
+                <a href="javascript:void(0);"><i class="layui-icon">&#xe66f;</i>龙斌</a>
+                <dl class="layui-nav-child">
+                    <dd>
+                        <a href="#">个人设置</a>
+                    </dd>
+                    <dd>
+                        <a href="login.html">退出系统</a>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    </header>
+    <div class="fastui-twomenu-bg">
+        <ul class="fastui-menu-wrapper">
+            <li><a href="../single.html">首页</a></li>
+            <li>
+                <a href="#">表格<i class="layui-icon">&#xe625;</i></a>
+                <ul class="fastui-two-menu">
+                    <li><a href="table.html">表格</a></li>
+                    <li><a href="table1.html">大表格</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">表单<i class="layui-icon">&#xe625;</i></a>
+                <ul class="fastui-two-menu">
+                    <li><a href="form.html">表单</a></li>
+                    <li><a href="contract.html">合同</a></li>
+                    <li><a href="form1.html">大表单</a></li>
+                    <li><a href="form2.html">表单帮助</a></li>
+                </ul>
+            </li>
+            <li><a href="bill.html">付款单</a></li>
+            <li><a href="#">订单</a></li>
+            <li>
+                <a href="#">错误页面<i class="layui-icon">&#xe625;</i></a>
+                <ul class="fastui-two-menu">
+                    <li><a href="404.html">404</a></li>
+                    <li><a href="500.html">500</a></li>
+                    <li><a href="nodata.html">无权限</a></li>
+                    <li><a href="load.html">加载中</a></li>
+                    <li><a href="develop.html">开发中</a></li>
+                </ul>
+            </li>
+            <li><span></span></li>
+            <li><a href="#">记录</a></li>
+        </ul>
+    </div>
+    <div class="fastui-single-content">
+        <div class="layui-row layui-card">
+            <div class="layui-col-xs8">
+                <div class="layui-card-header fastui-card-header">表单</div>
+                <div class="layui-card-body">
+                    <form class="layui-form fastui-form">
+                        <fieldset class="layui-elem-field layui-field-title fastui-field-color">
+                            <legend>基础信息</legend>
+                        </fieldset>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">分公司:</label>
+                                <div class="layui-input-inline" style="width: 180px;">
+                                    <select>
+                                        <option value="">请选择分公司</option>
+                                        <option value="杭州">杭州</option>
+                                        <option value="温州">温州</option>
+                                        <option value="温州">台州</option>
+                                        <option value="温州">绍兴</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">注册公司:</label>
+                                <div class="layui-input-inline" style="width: 180px;">
+                                    <select>
+                                        <option value="">请选择注册公司</option>
+                                        <option value="杭州">杭州</option>
+                                        <option value="温州">温州</option>
+                                        <option value="温州">台州</option>
+                                        <option value="温州">绍兴</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">合同类型:</label>
+                                <div class="layui-input-inline" style="width: 200px;">
+                                    <select>
+                                        <option value="">请选择合同类型</option>
+                                        <option value="杭州">杭州</option>
+                                        <option value="温州">温州</option>
+                                        <option value="温州">台州</option>
+                                        <option value="温州">绍兴</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">房屋用途:</label>
+                                <div class="layui-input-inline" style="width: 160px;">
+                                    <select>
+                                        <option value="">请选择房屋用途</option>
+                                        <option value="杭州">杭州</option>
+                                        <option value="温州">温州</option>
+                                        <option value="温州">台州</option>
+                                        <option value="温州">绍兴</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">活动中心:</label>
+                                <div class="layui-input-inline" style="width: 180px;">
+                                    <select disabled="disabled">
+                                        <option value="">请选择活动中心</option>
+                                        <option value="杭州">杭州</option>
+                                        <option value="温州">温州</option>
+                                        <option value="温州">台州</option>
+                                        <option value="温州">绍兴</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">发票类型:</label>
+                                <div class="layui-input-inline" style="width: 150px;">
+                                    <select>
+                                        <option value="">请选择发票类型</option>
+                                        <option value="杭州">杭州</option>
+                                        <option value="温州">温州</option>
+                                        <option value="温州">台州</option>
+                                        <option value="温州">绍兴</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <fieldset class="layui-elem-field layui-field-title fastui-field-color">
+                            <legend>房屋信息</legend>
+                        </fieldset>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">签订日期:</label>
+                                <div class="layui-input-inline" style="width: 130px;">
+                                    <input class="layui-input" type="text" name="title" value="" lay-verify="required"
+                                           autocomplete="off" placeholder="请选择签订日期"/>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">起始日期:</label>
+                                <div class="layui-input-inline" style="width: 130px;">
+                                    <input class="layui-input" type="text" name="title" value="" lay-verify="required"
+                                           autocomplete="off" placeholder="请选择起始日期"/>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">结束日期:</label>
+                                <div class="layui-input-inline" style="width: 130px;">
+                                    <input class="layui-input" type="text" name="title" value="" lay-verify="required"
+                                           autocomplete="off" placeholder="请选择结束日期"/>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">续签日期:</label>
+                                <div class="layui-input-inline" style="width: 130px;">
+                                    <input class="layui-input" type="text" name="title" value="" lay-verify="required"
+                                           autocomplete="off" placeholder="请选择续签日期"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">房屋联系人:</label>
+                                <div class="layui-input-inline" style="width: 130px;">
+                                    <input class="layui-input" type="text" name="title" value="" lay-verify="required"
+                                           autocomplete="off" placeholder="请输入联系人姓名"/>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">房屋联系人电话:</label>
+                                <div class="layui-input-inline">
+                                    <input class="layui-input" type="text" name="title" value="" lay-verify="required"
+                                           autocomplete="off" placeholder="请输入联系人电话"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">免租期:</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="" lay-verify="" placeholder="请输入密码" autocomplete="off"
+                                       class="layui-input">
+                            </div>
+                            <div class="layui-form-mid layui-word-aux fastui-form-mid">请填入数字，单位为天数</div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">房屋面积:</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="" lay-verify="" placeholder="请输入密码" autocomplete="off"
+                                       class="layui-input">
+                            </div>
+                            <div class="layui-form-mid layui-word-aux fastui-form-mid">请填入数字，单位为平方米</div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">付款方式:</label>
+                            <label class="layui-form-label" style="width: 12px; padding: 5px 5px 5px 0px;">押</label>
+                            <div class="layui-input-inline" style="width: 120px;">
+                                <input type="text" name="" lay-verify="" placeholder="请选择月份" autocomplete="off"
+                                       class="layui-input">
+                            </div>
+                            <label class="layui-form-label" style="width: 12px; padding: 5px 5px 5px 0px;">付</label>
+                            <div class="layui-input-inline" style="width: 120px;">
+                                <input type="text" name="" lay-verify="" placeholder="选择月份" autocomplete="off"
+                                       class="layui-input">
+                            </div>
+                            <label class="layui-form-label" style="width: 25px; padding: 5px 5px 5px 0px;">提前</label>
+                            <div class="layui-input-inline" style="width: 120px;">
+                                <input type="text" name="" lay-verify="" placeholder="请选择天数" autocomplete="off"
+                                       class="layui-input">
+                            </div>
+                            <label class="layui-form-label" style="width: 36px; padding: 5px 5px 5px 0px;">天付款</label>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">房屋地址:</label>
+                            <div class="layui-input-block">
+                                <div class="layui-input-inline" style="width: 80%;">
+                                    <textarea class="layui-textarea" style="min-height: 100px;"
+                                              placeholder="地址"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <fieldset class="layui-elem-field layui-field-title fastui-field-color">
+                            <legend>租赁信息</legend>
+                        </fieldset>
+                        <div class="layui-form-item">
+                            <p class="fastui-form-separate">应付款</p>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">房租费:</label>
+                                <div class="layui-input-inline" style="width: 160px;">
+                                    <input type="text" name="price_min" disabled="disabled" placeholder="请输入金额"
+                                           autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">物管费:</label>
+                                <div class="layui-input-inline" style="width: 160px;">
+                                    <input type="text" name="price_min" disabled="disabled" placeholder="请输入金额"
+                                           autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">中介费:</label>
+                                <div class="layui-input-inline" style="width: 160px;">
+                                    <input class="layui-input" type="text" name="title" value="" lay-verify="required"
+                                           autocomplete="off" placeholder="请输入金额"/>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">押金:</label>
+                                <div class="layui-input-inline" style="width: 160px;">
+                                    <input class="layui-input" type="text" name="title" value="" lay-verify="required"
+                                           autocomplete="off" placeholder="请输入金额"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">总金额:</label>
+                                <div class="layui-input-inline" style="width: 150px;">
+                                    <input type="text" name="" lay-verify="" placeholder="请输入金额" autocomplete="off"
+                                           class="layui-input">
+                                </div>
+                                <div class="layui-form-mid layui-word-aux fastui-form-mid">请填入数字，单位为元</div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">税率:</label>
+                                <div class="layui-input-inline" style="width: 80px;">
+                                    <input class="layui-input" type="text" name="title" value="" lay-verify="required"
+                                           autocomplete="off" placeholder="请输入数字"/>
+                                </div>
+                                <div class="layui-form-mid layui-word-aux fastui-form-mid">%</div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">税金:</label>
+                                <div class="layui-input-inline" style="width: 160px;">
+                                    <input class="layui-input" type="text" name="title" value="" lay-verify="required"
+                                           autocomplete="off" placeholder="请输入金额"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">开户名:</label>
+                                <div class="layui-input-inline" style="width: 230px;">
+                                    <input type="text" name="" lay-verify="" placeholder="请输入银行卡号开卡人姓名"
+                                           autocomplete="off" class="layui-input">
+                                </div>
+                                <div class="layui-form-mid layui-word-aux fastui-form-mid">请填入银行卡号开卡人姓名</div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">开户行:</label>
+                                <div class="layui-input-inline" style="width: 260px;">
+                                    <input type="text" name="" lay-verify="" placeholder="请输入银行卡支行" autocomplete="off"
+                                           class="layui-input">
+                                </div>
+                                <div class="layui-form-mid layui-word-aux fastui-form-mid">请填入银行卡属于的某支行</div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">开户账号:</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="" lay-verify="" placeholder="请输入开户账号" autocomplete="off"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">有无中介费:</label>
+                            <div class="layui-input-block">
+                                <input type="checkbox" name="" lay-skin="primary" title="中介费">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">中介费税率:</label>
+                                <div class="layui-input-inline" style="width: 80px;">
+                                    <input class="layui-input" type="text" disabled="disabled" name="title" value=""
+                                           lay-verify="required" autocomplete="off" placeholder="请输入数字"/>
+                                </div>
+                                <div class="layui-form-mid layui-word-aux fastui-form-mid">%</div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">中介费税金:</label>
+                                <div class="layui-input-inline" style="width: 160px;">
+                                    <input class="layui-input" type="text" name="title" disabled="disabled" value=""
+                                           lay-verify="required" autocomplete="off" placeholder="请输入金额"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">开户名:</label>
+                                <div class="layui-input-inline" style="width: 230px;">
+                                    <input type="text" name="" lay-verify="" disabled="disabled"
+                                           placeholder="请输入银行卡号开卡人姓名" autocomplete="off" class="layui-input">
+                                </div>
+                                <div class="layui-form-mid layui-word-aux fastui-form-mid">请填入银行卡号开卡人姓名</div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">开户行:</label>
+                                <div class="layui-input-inline" style="width: 260px;">
+                                    <input type="text" name="" lay-verify="" disabled="disabled" placeholder="请输入银行卡支行"
+                                           autocomplete="off" class="layui-input">
+                                </div>
+                                <div class="layui-form-mid layui-word-aux fastui-form-mid">请填入银行卡属于的某支行</div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">开户账号:</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="" lay-verify="" disabled="disabled" placeholder="请输入开户账号"
+                                       autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">年递增:</label>
+                            <div class="layui-input-inline fastui-join-check fastui-join-left">
+                                <input type="checkbox" name="" lay-skin="primary" title="是否年递增">
+                                <input style="width: 90px;" type="text" name="" lay-verify="" placeholder="请输入数字"
+                                       autocomplete="off" class="layui-input"><span>%</span>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">第一年费用:</label>
+                                <div class="layui-input-inline" style="width: 160px;">
+                                    <input class="layui-input" type="text" name="title" value="" lay-verify="required"
+                                           autocomplete="off" placeholder="请输入金额"/>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">第二年费用:</label>
+                                <div class="layui-input-inline" style="width: 160px;">
+                                    <input class="layui-input" type="text" name="title" value="" lay-verify="required"
+                                           autocomplete="off" placeholder="请输入金额"/>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">第三年费用:</label>
+                                <div class="layui-input-inline" style="width: 160px;">
+                                    <input class="layui-input" type="text" name="title" value="" lay-verify="required"
+                                           autocomplete="off" placeholder="请输入金额"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <p class="fastui-form-separate">首次付款</p>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">房租费:</label>
+                                <div class="layui-input-inline" style="width: 160px;">
+                                    <input type="text" name="price_min" disabled="disabled" placeholder="请输入金额"
+                                           autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">物管费:</label>
+                                <div class="layui-input-inline" style="width: 160px;">
+                                    <input type="text" name="price_min" disabled="disabled" placeholder="请输入金额"
+                                           autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">定金:</label>
+                                <div class="layui-input-inline" style="width: 160px;">
+                                    <input class="layui-input" type="text" name="title" value="" lay-verify="required"
+                                           autocomplete="off" placeholder="请输入金额"/>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">中介费:</label>
+                                <div class="layui-input-inline" style="width: 160px;">
+                                    <input class="layui-input" type="text" name="title" value="" lay-verify="required"
+                                           autocomplete="off" placeholder="请输入金额"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">押金:</label>
+                                <div class="layui-input-inline" style="width: 160px;">
+                                    <input class="layui-input" type="text" name="title" value="" lay-verify="required"
+                                           autocomplete="off" placeholder="请输入金额"/>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">总金额:</label>
+                                <div class="layui-input-inline" style="width: 150px;">
+                                    <input type="text" name="" lay-verify="" placeholder="请输入金额" autocomplete="off"
+                                           class="layui-input">
+                                </div>
+                                <div class="layui-form-mid layui-word-aux fastui-form-mid">请填入数字，单位为元</div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <p class="fastui-form-separate">分摊费用</p>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <input type="checkbox" name="" lay-skin="primary" title="是否需要分摊费用">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="layui-form-item">
+                                <div class="layui-inline">
+                                    <div class="layui-form-label">分摊部门:</div>
+                                    <div class="layui-input-inline">
+                                        <select name="">
+                                            <option value="">请选择中心</option>
+                                            <option value="">某某某活动中心</option>
+                                            <option value="">某某某活动中心</option>
+                                            <option value="">某某某活动中心</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="layui-inline">
+                                    <div class="layui-form-label">分摊比例:</div>
+                                    <div class="layui-input-inline" style="width: 120px;">
+                                        <input type="text" name="" lay-verify="" placeholder="请输入数字" autocomplete="off"
+                                               class="layui-input">
+                                    </div>
+                                    <div class="layui-form-mid layui-word-aux fastui-form-mid">%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fastui-bar-fixed">
+                            <div class="layui-form-item">
+                                <div class="layui-inline">
+                                    <div class="layui-form-label">分摊部门:</div>
+                                    <div class="layui-input-inline">
+                                        <select name="">
+                                            <option value="">请选择中心</option>
+                                            <option value="">某某某活动中心</option>
+                                            <option value="">某某某活动中心</option>
+                                            <option value="">某某某活动中心</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="layui-inline">
+                                    <div class="layui-form-label">分摊比例:</div>
+                                    <div class="layui-input-inline" style="width: 120px;">
+                                        <input type="text" name="" lay-verify="" placeholder="请输入数字" autocomplete="off"
+                                               class="layui-input">
+                                    </div>
+                                    <div class="layui-form-mid layui-word-aux fastui-form-mid">%</div>
+                                </div>
+                                <div class="layui-inline fastui-add-bar">
+                                    <i class="layui-icon fastui-add-data">&#xe654;</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn fastui-btn" lay-submit="" lay-filter="fastui-form-sub">立即提交
+                                </button>
+                                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="layui-col-xs4 fastui-form-help">
+                <div class="layui-card-header fastui-card-help" style="margin-bottom: 25px;"><i class="layui-icon">&#xe60b;</i>帮助
+                </div>
+                <ul class="layui-card-body fastui-formhelp-list">
+                    <li>1.业务流程图的绘制是按照业务的实际处理步骤和过程进行的。</li>
+                    <li>2.业务流程图是一种系统分析人员都懂的共同语言, 用来描述系统组织结构、业务流程。</li>
+                    <li>3.根据现金收付款凭证登记现金日记帐</li>
+                    <li><span>4.根据上述业务流程可以绘制出该企业帐务处理业务流程图，如图所示：特点</span></li>
+                    <li>5.)图中票据、帐单是有“ 生”、“ 死”的，即用它的一次生命周期来表示出一笔业务的处理情况。</li>
+                    <li>6.业务流程图的绘制是按照业务的实际处理步骤和过程进行的。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fastui-footer">
+			<span class="left">
+			  <a href=""><i class="layui-icon">&#xe68e;</i>首页</a>
+			  <span>&gt;</span>
+			  <a href="">国际新闻</a>
+			  <span>&gt;</span>
+			  <a href="">亚太地区</a>
+			</span>
+    <span class="right">财务中台管理系统V1.0.0 Build 4564</span>
+</div>
+<script src="../../static/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    layui.use(['jquery', 'form', 'laydate', 'layedit'], function ($) {
+        var form = layui.form,
+            laydate = layui.laydate,
+            layedit = layui.layedit;
+
+        $(".fastui-menu-wrapper li").hover(function () {
+            $(this).find(".fastui-two-menu").stop().slideDown(200)
+        }, function () {
+            $(this).find(".fastui-two-menu").stop().slideUp(200)
+        })
+        $('.fastui-form').delegate('.fastui-remove-data', 'click', function () {
+            $(this).parent().parent().remove();
+        })
+
+        $('.fastui-form').delegate('.fastui-add-data', 'click', function () {
+            var html = '<div>' +
+                '<div class="layui-form-item">' +
+                '<div class="layui-inline">' +
+                '<div class="layui-form-label">分摊部门:</div>' +
+                '<div class="layui-input-inline">' +
+                '<select name="">' +
+                '<option value="">请选择中心</option>' +
+                '<option value="">某某某活动中心</option>' +
+                '<option value="">某某某活动中心</option>' +
+                '<option value="">某某某活动中心</option>' +
+                '</select>' +
+                '</div>' +
+                '</div>' +
+                '<div class="layui-inline">' +
+                '<div class="layui-form-label">分摊比例:</div>' +
+                '<div class="layui-input-inline" style="width: 125px;">' +
+                '<input type="text" name="" lay-verify="" placeholder="请输入数字" autocomplete="off" class="layui-input">' +
+                '</div>' +
+                '<div class="layui-form-mid layui-word-aux fastui-form-mid">%</div>' +
+                '</div>' +
+                '<div class="layui-inline fastui-add-bar">' +
+                '<i class="layui-icon fastui-add-data" style="margin:0 12px;">&#xe654;</i>' +
+                '<i class="layui-icon fastui-remove-data" style="margin:0 14px;">&#x1006;</i>' +
+                '</div>'
+            '</div>' +
+            '</div>';
+            $(this).parent().parent().after(html);
+            form.render();
+        })
+    });
+</script>
+</body>
+</html>

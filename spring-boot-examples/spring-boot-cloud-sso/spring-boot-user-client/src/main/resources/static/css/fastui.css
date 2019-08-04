@@ -1,0 +1,1793 @@
+html, body {
+    height: 100%;
+}
+
+.fastui-screen {
+    height: 100%;
+    background: #F1F1F1;
+    overflow-x: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/*fastui common style*/
+.fastui-bg-black {
+    background: #393D49;
+}
+
+/*fastui header*/
+.fastui-header {
+    background-color: #5582e9;
+    position: relative;
+    height: 53px;
+    border-bottom: 1px solid #4c75d1;
+}
+
+.fastui-header .layui-nav {
+    background-color: #5582e9;
+}
+
+.fastui-header .layui-this {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.fastui-header .fastui-menubar {
+    position: absolute;
+    top: 0px;
+    left: 180px;
+}
+
+.fastui-menubar li span {
+    background: rgba(255, 255, 255, 0.1);
+    height: 18px;
+    width: 1px;
+    line-height: 53px;
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+.fastui-header .fastui-usercenter {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.fastui-header .layui-nav .layui-nav-item {
+    line-height: 53px;
+    margin-right: 8px;
+    height: 53px;
+}
+
+.fastui-product > a {
+    margin-right: 23px;
+    font-size: 16px;
+    color: #FFFFFF !important;
+}
+
+.fastui-product i {
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.layui-nav .fastui-product .layui-nav-child a:hover {
+    background: #5582E9;
+    color: #FFFFFF;
+}
+
+.layui-nav .fastui-product .layui-nav-child dd.layui-this a,
+.fastui-product .layui-nav-child dd.layui-this {
+    background: #5582E9;
+}
+
+.fastui-header .layui-nav .layui-nav-more {
+    right: 20px;
+}
+
+.fastui-product .layui-nav-child {
+    top: 60px;
+    z-index: 999;
+}
+
+.fastui-menubar.layui-nav .layui-nav-item a {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.fastui-logo {
+    height: 53px;
+    line-height: 20px;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+    width: 180px;
+}
+
+.fastui-logo img {
+    height: 23px;
+    margin-top: 6px;
+    width: auto;
+}
+
+.fastui-logo span {
+    font-size: 14px;
+    margin-left: 5px;
+    display: block;
+    margin-right: 24px;
+    text-align: right;
+}
+
+.fastui-logo strong {
+    font-size: 14px;
+}
+
+.fastui-menubar.layui-nav .layui-nav-item a:hover, .layui-nav .layui-this a {
+    background: rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.fastui-pack-up {
+    height: 41px;
+    line-height: 41px;
+    padding: 0 10px;
+    background: #FFFFFF;
+    width: 158px;
+    border-bottom: 1px solid #DAEFFF;
+}
+
+.fastui-pack-up h3 {
+    color: #ffffff;
+    text-align: right;
+}
+
+.fastui-pack-up h3 i {
+    font-size: 14px;
+    color: #5582E9;
+}
+
+.fastui-product.layui-this {
+    background: none;
+}
+
+.layui-nav .fastui-product.layui-this a {
+    background: none;
+}
+
+/*single two menu*/
+.fastui-two-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 999;
+    background: #FFFFFF;
+    border-radius: 6px;
+    min-width: 100px;
+    display: none;
+    border: 1px solid #EFEFEF;
+}
+
+.fastui-menu-wrapper .fastui-two-menu li {
+    margin: 5px 0;
+}
+
+.fastui-menu-wrapper .fastui-two-menu li a:hover {
+    color: #5582e9;
+    background: none;
+    font-weight: bold;
+}
+
+.fastui-menu-wrapper li a i {
+    color: #999999;
+    margin-left: 3px;
+}
+
+/*fastui sidebar*/
+
+
+.fastui-window-screen {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #F1F1F1;
+}
+
+.fastui-sidebar-up {
+    width: 260px;
+    overflow: hidden;
+}
+
+.fastui-sidebar-up .fastui-pack-up h3 {
+    margin-left: 35px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.fastui-silder ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 72px;
+    width: 120px;
+    z-index: 999;
+    color: #000000;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 135px -32px #5582E9;
+    border-radius: 2px;
+}
+
+.fastui-silder ul::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 0;
+    width: 0;
+    border-bottom-color: #FFFFFF;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 11px solid #FFFFFF;
+    border-left: 0;
+}
+
+.fastui-sidebar-up .layui-nav-tree.fastui-silder .layui-nav-item ul li a {
+    color: #777777;
+    font-size: 12px;
+    margin-left: 15px;
+    padding: 0 8px;
+    margin-top: 14px;
+    line-height: 12px;
+    height: 12px;
+    display: inline-block;
+    border-left: 2px solid #FFFFFF;
+}
+
+.fastui-sidebar-up .fastui-silder.layui-nav-tree .layui-nav-item ul li a:hover {
+    background: none;
+    border-left: 2px solid #5582e9;
+    color: #5582e9;
+}
+
+.fastui-sidebar-up .fastui-silder.layui-nav-tree ul li.layui-this {
+    background: none;
+}
+
+.fastui-sidebar-up .fastui-silder.layui-nav ul li.layui-this a {
+    background: none;
+    border-left: 2px solid #5582e9;
+    color: #5582e9;
+}
+
+.fastui-sidebar-up .layui-nav-child {
+    display: none;
+}
+
+.fastui-sidebar-up .fastui-silder li > a i {
+    display: block;
+    height: 16px;
+    font-size: 16px;
+    padding-left: 2px;
+}
+
+.fastui-sidebar-up .fastui-silder.layui-nav .layui-nav-item > a {
+    padding: 0 22px;
+}
+
+.fastui-sidebar-up .fastui-silder > li > a > cite {
+    width: 25px;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.fastui-sidebar-up .fastui-silder.layui-nav-tree .layui-nav-child a {
+    margin-left: 20px;
+    border-left: #f3f7fd 2px solid;
+}
+
+.fastui-sidebar-up .layui-nav-tree .layui-nav-item a {
+    line-height: 26px;
+}
+
+.fastui-silder {
+    height: 100%;
+}
+
+.fastui-silder.layui-nav {
+    background: #FFFFFF;
+}
+
+.fastui-silder.layui-nav-tree .layui-nav-item > a:hover {
+    background: #EEEEEE;
+}
+
+.fastui-silder.layui-nav-tree {
+    width: 178px;
+}
+
+.fastui-silder.layui-nav .layui-nav-item > a > cite {
+    color: #666;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.fastui-sidebar-all .layui-nav .layui-nav-more {
+    border-top-color: rgba(0, 0, 0, 0.3)
+}
+
+.fastui-sidebar-all .layui-nav .layui-nav-mored, .fastui-sidebar-all .layui-nav-itemed > a .layui-nav-more {
+    border-color: transparent transparent #999;
+}
+
+.fastui-sidebar-all .layui-nav .layui-nav-mored, .fastui-sidebar-all .layui-nav-itemed > a .layui-nav-more {
+    border-color: transparent transparent #999;
+}
+
+.fastui-silder.layui-nav-tree .layui-nav-child dd.layui-this a {
+    background: none !important;
+    border-left: 2px solid #5582e9;
+    color: #5582e9;
+}
+
+.fastui-silder.layui-nav-tree .layui-nav-child dd.layui-this {
+    background: none !important;
+}
+
+.fastui-silder.layui-nav i {
+    font-size: 14px;
+    margin-right: 10px;
+    color: #5582E9;
+}
+
+.fastui-silder.layui-nav .layui-nav-item > a {
+    font-size: 14px;
+    padding: 0 16px;
+    border-bottom: 1px solid #daefff;
+    border-top: 1px solid #DAEFFF;
+}
+
+.fastui-silder.layui-nav .layui-nav-item:first-of-type > a {
+    border-top: none;
+}
+
+.fastui-silder .layui-nav-itemed > .layui-nav-child {
+    background: none !important;
+}
+
+.fastui-silder.layui-nav-tree .layui-nav-child a {
+    color: #777777;
+    font-size: 12px;
+    margin-left: 36px;
+    padding: 0 8px;
+    border-left: 2px solid #FFFFFF;
+    margin-top: 14px;
+    line-height: 12px;
+    height: 12px;
+    display: inline-block;
+}
+
+.fastui-silder.layui-nav-tree .layui-nav-bar {
+    background: none;
+}
+
+.fastui-sidebar-all {
+    border-right: 2px solid #efefef;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fastui-header .layui-this:after {
+    content: "";
+    background: none !important;
+}
+
+.fastui-header .layui-nav-bar {
+    content: "";
+    background: none !important;
+}
+
+/*fastui content*/
+.fastui-single-content {
+    padding: 20px 20px 50px;
+}
+
+.fastui-maincontent {
+    position: absolute;
+    left: 178px;
+    top: 55px;
+    right: 0;
+    bottom: 0px;
+    margin: 0px 0px 50px;
+    overflow: hidden;
+    background: #fff;
+    border-left: 2px solid #F1F1F1;
+}
+
+#container > ul > li:first-child i {
+    display: none;
+}
+
+.fastui-maincontent.layui-tab-brief > .layui-tab-title .layui-this {
+    color: #5582e9;
+    font-size: 14px;
+}
+
+.fastui-maincontent > .layui-tab-content > .layui-tab-item {
+    position: absolute;
+    bottom: 0;
+    top: 41px;
+    left: 0;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.fastui-maincontent.layui-tab-brief > .layui-tab-more li.layui-this:after,
+.fastui-maincontent.layui-tab-brief > .layui-tab-title .layui-this:after {
+    border-bottom: 2px solid #5582e9;
+}
+
+.fastui-maincontent .layui-tab-title {
+    border-bottom: 1px solid #daefff;
+}
+
+.fastui-maincontent.layui-tab .layui-tab-title li {
+    font-size: 14px;
+}
+
+
+.fastui-footer {
+    background: #FFFFFF;
+    border-top: 10px solid #F1F1F1;
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.fastui-footer a i {
+    font-size: 12px;
+    margin-right: 12px;
+}
+
+.fastui-footer span {
+    margin: 0 15px;
+}
+
+.fastui-footer span span {
+    margin: 0 10px;
+}
+
+/*fastui-sidemenu-content*/
+.fastui-sidemenu-content {
+    margin: 15px 0 0 15px;
+}
+
+/******fastui-table****/
+.fastui-table {
+    min-width: 970px;
+}
+
+.fastui-table .layui-table, .layui-table-view {
+    margin: 0px;
+}
+
+.fastui-table .layui-table td {
+    padding: 1px 0;
+}
+
+.fastui-table .layui-table-header {
+    border-width: 0;
+}
+
+
+/**********fastui-seacher-bar************/
+.fastui-seacher-bar {
+    padding: 5px 0;
+    min-width: 970px;
+}
+
+.fastui-seacher-bar select {
+    height: 30px;
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+    margin-left: 10px;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.fastui-seacher-bar input {
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.fastui-seacher-btn {
+    display: inline;
+}
+
+.fastui-seacher-btn button {
+    float: right;
+    margin: 0 5px;
+}
+
+.fastui-seacher-input {
+    display: inline;
+}
+
+.fastui-department {
+    float: left;
+    border-top: 1px solid #EEEEEE;
+    padding: 10px;
+}
+
+.fastui-department-table {
+    width: 65%;
+    float: left;
+}
+
+.fastui-btn-more-wrapper {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+.fastui-btn-more-wrapper dd {
+    padding: 4px;
+}
+
+.layerDemo {
+    display: inline;
+}
+
+.fastui-department-nav {
+    background: #fff;
+    padding: 10px;
+}
+
+.fastui-department-child {
+    text-indent: 14px;
+    display: none;
+}
+
+.fastui-department-nav li a {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.fastui-department-nav li a:hover {
+    background: #dddddd;
+}
+
+.fastui-off-btn {
+    position: relative;
+    z-index: 999999;
+}
+
+.fastui-btn-child {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    background: #FFF;
+    z-index: 999999;
+    width: 100%;
+    border: 1px solid #e2e2e2;
+    display: none;
+    line-height: 30px;
+    padding: 10px;
+}
+
+.fastui-btn-child li:hover {
+    background: #DDDDDD;
+}
+
+.fastui-money-time {
+    border: 1px solid #E2E2E2;
+    height: 30px;
+}
+
+.fastui-money-time .layui-select-group select {
+    border: none;
+}
+
+.fastui-money-time .layui-input-inline input {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+/*****fastui-general-tab******/
+.fastui-general {
+    background: #F0F0F0;
+    padding: 10px 20px 40px;
+    min-width: 1000px;
+}
+
+.fastui-branch {
+    background: #fff;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.fastui-branch > form {
+    float: right;
+    margin-top: 12px;
+}
+
+.fastui-general .layui-tab-title .layui-this:after {
+    border: none;
+}
+
+.fastui-general .layui-tab-title .layui-this {
+    color: #FFFFFF;
+    background: #009688;
+}
+
+.fastui-general .layui-tab-title .layui-this:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.fastui-general .layui-tab-title .layui-this:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.fastui-general .layui-tab-title {
+    border: 1px solid #D2D2D2;
+    border-radius: 10px;
+    width: 287px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.fastui-general .layui-tab {
+    margin: 0px;
+}
+
+.fastui-general .layui-tab-title li {
+    border-right: 1px solid #D2D2D2;
+    text-align: center;
+    line-height: 30px;
+}
+
+.fastui-general .layui-tab-title li:last-child {
+    border-right: none;
+}
+
+.fastui-general .layui-this {
+    color: #000000;
+}
+
+.fastui-general .layui-tab-content {
+    padding: 0;
+}
+
+.fastui-general-all {
+    background: #FFFFFF;
+    padding-top: 20px;
+}
+
+.fastui-general-tab {
+    position: relative;
+}
+
+.fastui-general-con {
+    background: #F0F0F0;
+    height: 100%;
+    position: relative;
+    right: 0;
+    bottom: 0;
+}
+
+.fastui-echart-bg {
+    background: #F0F0F0;
+    height: 600px;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    padding: 0 20px;
+    min-width: 1000px;
+}
+
+.fastui-echart {
+    background: #FFFFFF;
+    height: 280px;
+    margin: 0;
+    float: left;
+    padding: 40px;
+    position: relative;
+}
+
+.fastui-echart .fastui-echart-tab.layui-tab-title {
+    position: absolute;
+    top: 15px;
+    left: initial;
+    right: 15px;
+    width: 130px;
+    border: 1px solid #C2C2C2;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.fastui-echart .layui-tab-title li {
+    height: 30px;
+    line-height: 30px;
+    min-width: 35px;
+}
+
+.fastui-echart .layui-tab-title li:last-child {
+    border-left: 1px solid #C2C2C2;
+}
+
+.fastui-echart .layui-tab-title .layui-this:after {
+    border: none;
+}
+
+.fastui-echart .layui-tab-title .layui-this {
+    color: #FFFFFF;
+    background: #009688;
+}
+
+.fastui-echart .layui-this:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.fastui-echart .layui-this:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.fastui-frist-con {
+    background: #FFFFFF;
+    height: 200px;
+    min-width: 1000px;
+}
+
+.fastui-frist-total {
+    text-align: center;
+    color: #393D49;
+    border-right: 1px solid #D2D2D2;
+    display: inline-block;
+}
+
+.fastui-frist-total:last-child {
+    border-right: none;
+}
+
+.fastui-frist-total i {
+    font-size: 38px;
+}
+
+.fastui-frist-total p {
+    color: #393D49;
+    margin-top: 10px;
+}
+
+.fastui-frist-total p span {
+    display: block;
+    margin: 10px 0;
+    font-size: 22px;
+    color: #2F4056;
+}
+
+.fastui-customer {
+    text-align: center;
+    width: 245px;
+    float: left;
+    border-right: 1px solid #F0F0F0;
+    margin-top: 100px;
+}
+
+.fastui-customer:last-child {
+    border-right: none;
+}
+
+.fastui-customer i {
+    font-size: 24px;
+    color: #009688;
+}
+
+.fastui-customer p {
+    color: #009688;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.fastui-customer p span {
+    font-size: 32px;
+    display: block;
+    color: #FF5722;
+    margin-top: 10px;
+}
+
+.fastui-echart-branch {
+    margin: 0 20px;
+    background: #FFF;
+    padding: 0 20px;
+    position: relative;
+}
+
+.fastui-echart-branch h1 {
+    padding: 20px 20px;;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.fastui-echart-branch table a {
+    color: #009688;
+}
+
+.fastui-table-btn {
+    float: right;
+}
+
+.fastui-echart-branch .layui-tab-title {
+    position: absolute;
+    top: 22px;
+    left: initial;
+    right: 15px;
+    border: 1px solid #C2C2C2;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.fastui-echart-branch .layui-tab-title li {
+    height: 30px;
+    line-height: 30px;
+    min-width: 35px;
+}
+
+.fastui-echart-branch .layui-tab-title li {
+    border-right: 1px solid #C2C2C2;
+}
+
+.fastui-echart-branch .layui-tab-title li:last-child {
+    border-right: none;
+}
+
+.fastui-echart-branch .layui-tab-title .layui-this:after {
+    border: none;
+}
+
+.fastui-echart-branch .layui-tab-title .layui-this {
+    color: #FFFFFF;
+    background: #009688;
+}
+
+.fastui-echart-branch .layui-this:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.fastui-echart-branch .layui-this:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.fastui-echart-branch .layui-tab-item {
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+/** fastui-echart-wrapper **/
+.fastui-echart-wrapper {
+    margin: auto;
+}
+
+/*****fastui-general-tab******/
+.fastui-tab-wrapper {
+    position: absolute;
+    padding: 0px;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.fastui-loading {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.fastui-toolbar-btn {
+    width: 100%;
+}
+
+/**layui-ext treeselect*/
+.layui-form-select .layui-tree {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 42px;
+    padding: 5px 0;
+    z-index: 999;
+    min-width: 100%;
+    border: 1px solid #d2d2d2;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12);
+    box-sizing: border-box;
+}
+
+.layui-form-selected .layui-tree {
+    display: block;
+}
+
+
+.layui-tab .layui-tab-title li {
+    font-size: 12px;
+}
+
+.layui-nav * {
+    font-size: 12px;
+}
+
+.layui-card-header {
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: none;
+    line-height: 40px;
+    height: 40px;
+}
+
+.layui-layout-admin .layui-logo {
+    font-size: 14px;
+}
+
+.layui-side-scroll {
+    width: 200px;
+}
+
+
+/****规范UI标准************/
+/*单页面二级导航*/
+.fastui-twomenu-bg {
+    background: #FFFFFF;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 0px;
+}
+
+.fastui-menu-wrapper {
+    margin-left: 200px;
+}
+
+.fastui-menu-wrapper li {
+    display: inline-block;
+    margin: 0 4px;
+    color: #efefef;
+    font-size: 14px;
+    position: relative;
+}
+
+.fastui-menu-wrapper li a {
+    display: inline-block;
+    padding: 0 16px;
+    border-radius: 6px;
+    color: #333333;
+}
+
+.fastui-menu-wrapper li span {
+    background: rgba(0, 0, 0, 0.1);
+    height: 18px;
+    width: 1px;
+    line-height: 40px;
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+.fastui-menu-wrapper li a:hover {
+    background: #f1f1f1;
+}
+
+/*********table*********/
+.layui-table-view .layui-table {
+    height: 100%;
+}
+
+.fastui-content-style {
+    padding: 15px;
+}
+
+.fastui-content-style .layui-table-cell {
+    white-space: normal;
+    overflow: auto;
+}
+
+.fastui-content-style .layui-table-view .layui-table[lay-size=sm] .layui-table-cell {
+    height: auto;
+    overflow-x: hidden;
+}
+
+.fastui-content-style .layui-table-cell {
+    height: auto;
+}
+
+.fastui-toolbar-btn .layui-btn {
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.fastui-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.fastui-btn-down {
+    position: absolute;
+    top: 32px;
+    left: 0px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px -10px #5582E9;
+    border: 1px solid #F1F1F1;
+    display: none;
+}
+
+.fastui-btn-down li a {
+    color: #666666;
+    font-size: 12px;
+}
+
+.fastui-btn-down li:hover {
+    background: #5582E9;
+}
+
+.fastui-btn-down li:hover a {
+    color: #FFFFFF;
+}
+
+.layui-table-view .layui-table thead th {
+    font-weight: bold;
+    padding: 7px 0;
+}
+
+.layui-table thead tr,
+.layui-table-header,
+.layui-table-mend,
+.layui-table-patch,
+.layui-table-total, .layui-table-total tr,
+.layui-table[lay-even] tr:nth-child(even),
+.layui-table-header, .layui-table-header .layui-table {
+    background-color: #e0eaff;
+}
+
+.layui-table tbody tr:hover, .layui-table-hover {
+    background-color: #f5fbfe;
+}
+
+.layui-table-tool {
+    background: none;
+    padding: 10px 0px;
+}
+
+.layui-table-tool .layui-inline[lay-event] {
+    border: none;
+}
+
+.layui-table-tool .layui-inline[lay-event]:hover {
+    border: none;
+}
+
+.layui-table-tool .layui-table-tool-self .layui-inline[lay-event] {
+    margin: 0;
+}
+
+.layui-table-view {
+    border: none;
+}
+
+.layui-table-box {
+    border-top: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #eee;
+}
+
+.layui-table-page {
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-top: none;
+}
+
+.layui-btn .layui-icon {
+    margin-right: 0px;
+    font-size: 16px;
+}
+
+.layui-table-cell {
+    overflow: visible !important;
+}
+
+.layui-table .layui-unselect.layui-form-switch {
+    box-sizing: content-box;
+    margin-top: 0;
+}
+
+.fastui-dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.fastui-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    box-shadow: 0px 0px 19px -4px #5582E9;
+    width: 86px;
+    padding: 1px;
+    text-align: center;
+    border-radius: 3px;
+    background: #fff;
+    z-index: 1;
+}
+
+.fastui-dropdown-menu li {
+    padding: 3px 0;
+}
+
+/****index content******/
+.fastui-card-body {
+    min-height: 200px;
+}
+
+
+/******page***/
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+    background-color: #5582E9;
+}
+
+/****btn****/
+
+.layui-btn {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.fastui-btn.layui-btn.fastui-btn-blue {
+    background-color: #78a0fc;
+}
+
+.fastui-btn.layui-btn.fastui-btn-org {
+    background-color: #ff9865;
+}
+
+.fastui-btn.layui-btn.fastui-btn-warn {
+    background-color: #ffb165;
+}
+
+.fastui-btn.layui-btn.fastui-btn-green {
+    background-color: #7ccc9a;
+}
+
+.fastui-btn-center {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*****form******/
+.fastui-form {
+    min-width: 775px;
+}
+
+.fastui-form .layui-input-inline {
+    width: 300px;
+    vertical-align: middle;
+}
+
+.fastui-join-check.layui-input-inline {
+    width: 450px;
+}
+
+.fastui-join-check > span {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.fastui-join-check input {
+    float: left;
+    width: 300px;
+}
+
+.fastui-join-left div {
+    float: left;
+}
+
+.layui-form-item .fastui-join-check .layui-form-checkbox[lay-skin=primary] {
+    margin-top: 6px;
+    margin-left: 7px;
+}
+
+.layui-input, .layui-select {
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    border-color: #dcdcdc;
+    font-size: 12px;
+}
+
+.fastui-bill-input.layui-input {
+    border: none;
+}
+
+.fastui-bill-input.layui-input:hover {
+    border: none !important;
+    box-shadow: none;
+}
+
+.layui-form-radio > i {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.layui-form-label {
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.layui-form-label span {
+    font-weight: normal;
+}
+
+.layui-form-radio > i:hover, .layui-form-radioed > i {
+    color: #5582e9;
+}
+
+.layui-form-checkbox[lay-skin=primary]:hover i {
+    border-color: #5582e9;
+}
+
+.layui-form-checked[lay-skin=primary] i {
+    background: #5582e9;
+}
+
+.fastui-btn.layui-btn {
+    background-color: #5582E9;
+}
+
+.layui-form-select dl dd.layui-this {
+    background-color: #5582E9;
+}
+
+.layui-btn-primary:hover {
+    border-color: #5582E9;
+}
+
+.layui-input:hover, .layui-textarea:hover {
+    box-shadow: 0px 0px 10px -5px #5582E9;
+    border: 1px solid #5582E9 !important;
+}
+
+.layui-form-switch {
+    margin-top: 0;
+}
+
+.layui-form-onswitch {
+    border-color: #5582E9;
+    background-color: #5582E9;
+}
+
+.layui-textarea {
+    font-size: 12px;
+}
+
+.fastui-form-mid.layui-form-mid {
+    font-size: 12px;
+    line-height: 10px;
+}
+
+.layui-form-label span {
+    color: #FF0000;
+}
+
+/********seacher*************/
+.fastui-toolbar-btn {
+    position: relative;
+    margin-bottom: 10px;
+    min-width: 670px;
+}
+
+.fastui-seacher-ullist li {
+    float: left;
+    padding: 0 22px;
+    font-size: 14px;
+}
+
+.fastui-seacher-ullist li a {
+    display: inline-block;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.fastui-seacher-ullist li:first-of-type {
+    padding-left: 0px;
+}
+
+.fastui-seacher-ullist li a:hover {
+    color: #5582E9;
+    border-bottom: 2px solid #5582E9;
+}
+
+.fastui-seacher-ullist li a.fastui-this {
+    color: #5582E9;
+    border-bottom: 2px solid #5582E9;
+}
+
+.fastui-seacher-up {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 37px 6px #EEEEEE;
+    padding: 20px 0px 10px;
+    margin-top: 8px;
+    border-radius: 6px;
+    display: none;
+    min-width: 670px;
+}
+
+.layui-form-item .layui-form-checkbox[lay-skin=primary] {
+    margin-top: 0px;
+}
+
+.fastui-seacher-up label {
+    font-size: 14px;
+    color: #666666;
+}
+
+.layui-form-label {
+    width: 90px;
+}
+
+.fastui-seacher-hide {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.fastui-seacher-hide i {
+    margin-left: 5px;
+}
+
+.layui-form-radio {
+    margin-top: 2px;
+}
+
+.layui-form-label {
+    font-size: 12px;
+}
+
+.fastui-card-header {
+    border-bottom: 1px solid #eaf0fc;
+    border-left: 3px solid #5582E9;
+}
+
+
+/***************errohtml*************/
+.fastui-erro-html {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.fastui-erro-html p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    color: #999;
+}
+
+.fastui-erro-con {
+    position: relative;
+}
+
+.fastui-erro-con a {
+    color: #5582E9;
+    font-size: 12px;
+}
+
+.fastui-erro-show {
+    text-align: left;
+    margin-top: 30px;
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.fastui-not-found {
+    width: 350px;
+}
+
+.fastui-erro-url {
+    width: 240px
+}
+
+.fastui-no-data {
+    width: 260px;
+}
+
+.fastui-load-img {
+    width: 240px;
+}
+
+.fastui-dot {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #999999;
+    display: inline-block;
+    margin: 0 3px;
+    animation: fastui-dot linear 1s infinite;
+    -webkit-animation: fastui-dot linear 1s infinite;
+}
+
+.fastui-dot:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.fastui-dot:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.fastui-dot:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+@keyframes fastui-dot {
+    0%, 60%, 100% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(2.5);
+    }
+}
+
+@-webkit-keyframes fastui-dot {
+    0%, 60%, 100% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(2.5);
+    }
+}
+
+@-moz-keyframes fastui-dot {
+    0%, 60%, 100% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(2.5);
+    }
+}
+
+/*********single tab*****/
+.fastui-tab-title li, .fastui-tabtitle-rank li {
+    float: left;
+    margin: 0 10px;
+}
+
+.fastui-tab-title li a, .fastui-tabtitle-rank li a {
+    color: #333333;
+    font-size: 14px;
+    border-bottom: 2px solid #fff;
+    padding: 5px;
+    font-weight: normal;
+}
+
+.fastui-tab-title li a:hover, .fastui-tabtitle-rank li a:hover {
+    color: #5582E9;
+    border-bottom: 2px solid #5582E9;
+}
+
+.fastui-tab-title li.fastui-tab-click a,
+.fastui-tabtitle-rank li.fastui-tab-click a {
+    color: #5582E9;
+    border-bottom: 2px solid #5582E9;
+}
+
+.fastui-tab-con, .fastui-tabcon-rank {
+    display: none;
+}
+
+.fastui-tab-con div {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 35px;
+}
+
+.fastui-tab-con div strong {
+    display: block;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.fastui-tab-con div strong cite {
+    font-style: normal;
+    font-size: 12px;
+}
+
+.fastui-tab-con div span {
+    display: block;
+    font-size: 12px;
+}
+
+.fastui-tabcon-rank {
+    margin-top: 15px;
+}
+
+.fastui-tabcon-rank li {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+/******field******/
+.layui-elem-field legend {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.fastui-field-color {
+    margin-top: 35px;
+}
+
+.fastui-field-color legend {
+    color: #5582E9;
+}
+
+
+.fastui-form-separate {
+    border-left: 2px solid #5582E9;
+    padding-left: 10px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    background: #f8f8f8;
+    margin: 22px 0px 22px 30px;
+}
+
+.fastui-add-bar {
+    margin-left: 50px;
+}
+
+.fastui-add-bar i {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 14px;
+    background: #EEEEEE;
+    border-radius: 2px;
+}
+
+/*******help*****/
+.fastui-form-help {
+    padding-left: 20px;
+}
+
+.fastui-formhelp-list {
+    padding-left: 20px;
+}
+
+.fastui-formhelp-list li {
+    line-height: 32px;
+    color: #999;
+    font-size: 12px;
+}
+
+.fastui-formhelp-list li span {
+    color: #FF0000;
+}
+
+.fastui-card-help {
+    border-bottom: 1px solid #eaf0fc;
+    color: #666;
+}
+
+.fastui-card-help.layui-card-header .layui-icon {
+    position: initial;
+    margin-right: 5px;
+    margin-top: 0px;
+    font-weight: normal;
+    color: #666;
+    vertical-align: middle;
+}
+
+/*******用户管理中心首页*******/
+.fastui-user-appicon {
+    margin-top: 25px;
+}
+
+.fastui-user-appicon img {
+    width: 80px;
+}
+
+.fastui-user-appicon dt {
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.fastui-user-appicon dd {
+    float: left;
+    margin-top: 10px;
+}
+
+.fastui-user-appicon dd p {
+    font-size: 12px;
+    color: #666;
+}
+
+.fastui-user-appicon dd p i {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.fastui-user-appicon dd p strong {
+    display: inline-block;
+    color: #fff;
+    background: #5582E9;
+    line-height: 20px;
+    height: 20px;
+    padding: 0 3px;
+    border-radius: 3px;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.fastui-user-appicon dd span {
+    font-size: 12px;
+    color: #666666;
+}
+
+.fastui-app-body {
+    padding-bottom: 38px;
+}
+
+.fastui-unapp-body {
+    padding-bottom: 38px;
+}
+
+.fastui-unapp-body .fastui-user-appicon dd p strong {
+    background: #999;
+}
+
+.fastui-user-msg {
+    text-align: right;
+    font-size: 12px;
+}
+
+.fastui-user-msg a {
+    color: #5582E9;
+}
+
+.fastui-msg-list li {
+    font-size: 12px;
+    line-height: 28px;
+}
+
+@media only screen and (max-width: 1110px ) {
+    .fastui-user-appicon dt {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .fastui-user-appicon dd {
+        width: 200px;
+    }
+}
+
+
+/*****************资产管理系统首页*************/
+.fastui-task-num {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 55px;
+}
+
+.fastui-task-num dt {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #78a0fc;
+}
+
+.fastui-task-num dt span {
+    font-size: 12px;
+}
+
+.fastui-task-num dd {
+    display: block;
+    color: #666;
+    font-size: 12px;
+    height: 20px;
+}
+
+.fastui-task-num dd:last-of-type {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.fastui-task-num.fastui-font-color dt {
+    color: #ff9865;
+}
+
+.fastui-task-num.fastui-font-color1 dt {
+    color: #7ccc9a;
+}
+
+.fastui-money-stat.fastui-tab-con {
+    display: block;
+}
+
+.fastui-money-stat.fastui-tab-con div {
+    padding: 10px 0 30px;
+    margin-top: 0;
+}
+
+.fastui-money-stat.fastui-tab-con div p {
+    font-weight: bold;
+}
+
+.fastui-money-stat.fastui-tab-con div strong {
+    font-size: 26px;
+    margin: 10px 0 0;
+}
+
+.fastui-already-money.fastui-tab-con {
+    display: block;
+}
+
+.fastui-already-money.fastui-tab-con div {
+    padding: 20px 0 30px;
+    margin-top: 0;
+}
+
+.fastui-already-money.fastui-tab-con div p {
+    font-weight: bold;
+}
+
+.fastui-already-money.fastui-tab-con div strong {
+    font-size: 22px;
+    margin: 10px 0 0;
+    color: #78a0fc;
+}
+
+/*******tree*******/
+.fastui-tree-bg {
+    box-shadow: 0px 0px 32px -8px #5582E9;
+    border-radius: 2px;
+    padding: 30px 0;
+}
+
+

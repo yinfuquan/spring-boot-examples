@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yin.springboot.user.center.mapper.OauthRefreshTokenMapper">
+  <resultMap id="BaseResultMap" type="com.yin.springboot.user.center.domain.OauthRefreshToken">
+    <!--@mbg.generated generated on Thu Jul 11 11:29:40 CST 2019.-->
+    <result column="token_id" jdbcType="VARCHAR" property="tokenId" />
+    <result column="token" jdbcType="BLOB" property="token" />
+    <result column="authentication" jdbcType="BLOB" property="authentication" />
+  </resultMap>
+  <insert id="batchInsert" parameterType="map">
+    <!--@mbg.generated generated on Thu Jul 11 11:29:40 CST 2019.-->
+    insert into oauth_refresh_token
+    (token_id, token, authentication)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.tokenId,jdbcType=VARCHAR}, #{item.token,jdbcType=BLOB}, #{item.authentication,jdbcType=BLOB}
+        )
+    </foreach>
+  </insert>
+  <insert id="insertOrUpdate" parameterType="com.yin.springboot.user.center.domain.OauthRefreshToken">
+    <!--@mbg.generated generated on Thu Jul 11 11:29:40 CST 2019.-->
+    insert into oauth_refresh_token
+    (token_id, token, authentication)
+    values
+    (#{tokenId,jdbcType=VARCHAR}, #{token,jdbcType=BLOB}, #{authentication,jdbcType=BLOB}
+      )
+    on duplicate key update 
+    token_id = #{tokenId,jdbcType=VARCHAR}, 
+    token = #{token,jdbcType=BLOB}, 
+    authentication = #{authentication,jdbcType=BLOB}
+  </insert>
+  <insert id="insertOrUpdateSelective" parameterType="com.yin.springboot.user.center.domain.OauthRefreshToken">
+    <!--@mbg.generated generated on Thu Jul 11 11:29:40 CST 2019.-->
+    insert into oauth_refresh_token
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="tokenId != null">
+        token_id,
+      </if>
+      <if test="token != null">
+        token,
+      </if>
+      <if test="authentication != null">
+        authentication,
+      </if>
+    </trim>
+    values
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="tokenId != null">
+        #{tokenId,jdbcType=VARCHAR},
+      </if>
+      <if test="token != null">
+        #{token,jdbcType=BLOB},
+      </if>
+      <if test="authentication != null">
+        #{authentication,jdbcType=BLOB},
+      </if>
+    </trim>
+    on duplicate key update 
+    <trim suffixOverrides=",">
+      <if test="tokenId != null">
+        token_id = #{tokenId,jdbcType=VARCHAR},
+      </if>
+      <if test="token != null">
+        token = #{token,jdbcType=BLOB},
+      </if>
+      <if test="authentication != null">
+        authentication = #{authentication,jdbcType=BLOB},
+      </if>
+    </trim>
+  </insert>
+</mapper>

@@ -1,0 +1,8 @@
+my:
+  config1:
+    name: yin
+    age: 20
+  config2:
+    dept: shijue
+    company: bzl
+

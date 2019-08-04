@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-beetlsql/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-qq-login/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-docker/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-sso/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-cloud-sso/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-user-center/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-user-client/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-oauth/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-cloud-sso/spring-boot-user-center2/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-product/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-weixin-pay/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-netty/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-netty/spring-boot-netty-server/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-netty/spring-boot-netty-client/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-commons/spring-boot-common-core/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-commons/spring-boot-common-base/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-commons/spring-boot-common-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-zookeeper/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-test/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-thread/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-login/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-mybatis-plus/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-freemarker/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-vue/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-email/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-log/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-websocket/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-config/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="com.a.a.a.g.d.f">
+    <domainId />
+    <mapperDomain />
+    <backquoteDomain />
+  </component>
+</project>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yin.springboot.mybatis.mapper.UmsMemberTagMapper">
+  <resultMap id="BaseResultMap" type="com.yin.springboot.mybatis.domain.UmsMemberTag">
+    <!--@mbg.generated-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="finish_order_count" jdbcType="INTEGER" property="finishOrderCount" />
+    <result column="finish_order_amount" jdbcType="DECIMAL" property="finishOrderAmount" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, `name`, finish_order_count, finish_order_amount
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from ums_member_tag
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--@mbg.generated-->
+    delete from ums_member_tag
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.yin.springboot.mybatis.domain.UmsMemberTag" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into ums_member_tag (`name`, finish_order_count, finish_order_amount
+      )
+    values (#{name,jdbcType=VARCHAR}, #{finishOrderCount,jdbcType=INTEGER}, #{finishOrderAmount,jdbcType=DECIMAL}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.yin.springboot.mybatis.domain.UmsMemberTag" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into ums_member_tag
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        `name`,
+      </if>
+      <if test="finishOrderCount != null">
+        finish_order_count,
+      </if>
+      <if test="finishOrderAmount != null">
+        finish_order_amount,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="finishOrderCount != null">
+        #{finishOrderCount,jdbcType=INTEGER},
+      </if>
+      <if test="finishOrderAmount != null">
+        #{finishOrderAmount,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yin.springboot.mybatis.domain.UmsMemberTag">
+    <!--@mbg.generated-->
+    update ums_member_tag
+    <set>
+      <if test="name != null">
+        `name` = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="finishOrderCount != null">
+        finish_order_count = #{finishOrderCount,jdbcType=INTEGER},
+      </if>
+      <if test="finishOrderAmount != null">
+        finish_order_amount = #{finishOrderAmount,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yin.springboot.mybatis.domain.UmsMemberTag">
+    <!--@mbg.generated-->
+    update ums_member_tag
+    set `name` = #{name,jdbcType=VARCHAR},
+      finish_order_count = #{finishOrderCount,jdbcType=INTEGER},
+      finish_order_amount = #{finishOrderAmount,jdbcType=DECIMAL}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update ums_member_tag
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="`name` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=BIGINT} then #{item.name,jdbcType=VARCHAR}
+        </foreach>
+      </trim>
+      <trim prefix="finish_order_count = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=BIGINT} then #{item.finishOrderCount,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="finish_order_amount = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id,jdbcType=BIGINT} then #{item.finishOrderAmount,jdbcType=DECIMAL}
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id,jdbcType=BIGINT}
+    </foreach>
+  </update>
+  <insert id="batchInsert" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into ums_member_tag
+    (`name`, finish_order_count, finish_order_amount)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.name,jdbcType=VARCHAR}, #{item.finishOrderCount,jdbcType=INTEGER}, #{item.finishOrderAmount,jdbcType=DECIMAL}
+        )
+    </foreach>
+  </insert>
+  <insert id="insertOrUpdate" keyColumn="id" keyProperty="id" parameterType="com.yin.springboot.mybatis.domain.UmsMemberTag" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into ums_member_tag
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      `name`,
+      finish_order_count,
+      finish_order_amount,
+    </trim>
+    values
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      #{name,jdbcType=VARCHAR},
+      #{finishOrderCount,jdbcType=INTEGER},
+      #{finishOrderAmount,jdbcType=DECIMAL},
+    </trim>
+    on duplicate key update 
+    <trim suffixOverrides=",">
+      <if test="id != null">
+        id = #{id,jdbcType=BIGINT},
+      </if>
+      `name` = #{name,jdbcType=VARCHAR},
+      finish_order_count = #{finishOrderCount,jdbcType=INTEGER},
+      finish_order_amount = #{finishOrderAmount,jdbcType=DECIMAL},
+    </trim>
+  </insert>
+  <insert id="insertOrUpdateSelective" keyColumn="id" keyProperty="id" parameterType="com.yin.springboot.mybatis.domain.UmsMemberTag" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into ums_member_tag
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="name != null">
+        `name`,
+      </if>
+      <if test="finishOrderCount != null">
+        finish_order_count,
+      </if>
+      <if test="finishOrderAmount != null">
+        finish_order_amount,
+      </if>
+    </trim>
+    values
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="finishOrderCount != null">
+        #{finishOrderCount,jdbcType=INTEGER},
+      </if>
+      <if test="finishOrderAmount != null">
+        #{finishOrderAmount,jdbcType=DECIMAL},
+      </if>
+    </trim>
+    on duplicate key update 
+    <trim suffixOverrides=",">
+      <if test="id != null">
+        id = #{id,jdbcType=BIGINT},
+      </if>
+      <if test="name != null">
+        `name` = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="finishOrderCount != null">
+        finish_order_count = #{finishOrderCount,jdbcType=INTEGER},
+      </if>
+      <if test="finishOrderAmount != null">
+        finish_order_amount = #{finishOrderAmount,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+</mapper>

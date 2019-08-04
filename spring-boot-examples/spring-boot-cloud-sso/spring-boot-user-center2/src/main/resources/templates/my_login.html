@@ -1,0 +1,39 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/my_login.css"/>
+
+</head>
+<body class="login-backgroud">
+
+<div class="login-card">
+    <div class="login-body">
+        <div th:text="我的登录">
+        </div>
+        <form class="layui-form" action="/login"  method="post">
+            <div class="layui-inline">
+                <div class="layui-input-inline">
+                    <i class="layui-icon"></i>
+                    <input type="text" class="layui-input" placeholder="请输入账号" required>
+                </div>
+                <div class="layui-input-inline">
+                    <i class="layui-icon"></i>
+                    <input type="text" class="layui-input" placeholder="请输入密码" required>
+                </div>
+                <div class="layui-input-inline">
+                    <i class="layui-icon"></i>
+                    <input type="text" class="layui-input" placeholder="请输入验证码" required>
+                    <div></div>
+                </div>
+
+                <button class="layui-btn  layui-btn-fluid" lay-submit='submit'>登录</button>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+
+</body>
+
+</html>
