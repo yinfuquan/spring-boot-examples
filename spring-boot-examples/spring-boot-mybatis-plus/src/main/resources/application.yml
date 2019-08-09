@@ -11,6 +11,8 @@ spring:
       pool-prepared-statements: true
       max-pool-prepared-statement-per-connection-size: 20
     type: com.alibaba.druid.pool.DruidDataSource
+  profiles:
+    active: dev
 
 server:
   port: 8015

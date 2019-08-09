@@ -21,12 +21,18 @@ public class MyBatisConfig {
         return new PaginationInterceptor().setCountSqlParser(new JsqlParserCountOptimize());
     }
 
-//    /**
-//     * SQL执行效率插件
-//     */
-//    @Bean
-//    @Profile({"dev","test"})// 设置 dev test 环境开启
-//    public PerformanceInterceptor performanceInterceptor() {
-//        return new PerformanceInterceptor();
-//    }
+    /**
+     * SQL执行效率插件,需要yml文件配置
+     * spring:
+     *  profiles:
+     *      active: dev
+     */
+    @Bean
+    @Profile({"dev","test"})// 设置 dev test 环境开启
+    public PerformanceInterceptor performanceInterceptor() {
+        PerformanceInterceptor performanceInterceptor=   new PerformanceInterceptor();
+        performanceInterceptor.setFormat(true);
+        performanceInterceptor.setMaxTime(200);
+        return performanceInterceptor;
+    }
 }

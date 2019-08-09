@@ -18,9 +18,9 @@ public class UserCtl {
 
 
     @RequestMapping("/add")
-    @RequiresPermissions({"user:add"})
+    //@RequiresPermissions({"user:add"})
     public String addUser() {
-        SecurityUtils.getSubject().checkPermission("user:add");
+       // SecurityUtils.getSubject().checkPermission("user:add");
 
         return "add";
     }
