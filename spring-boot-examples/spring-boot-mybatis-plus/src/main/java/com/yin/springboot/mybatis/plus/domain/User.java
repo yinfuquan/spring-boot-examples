@@ -1,9 +1,7 @@
 package com.yin.springboot.mybatis.plus.domain;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
+
 import java.io.Serializable;
 import java.util.Date;
 import lombok.Data;
@@ -32,6 +30,8 @@ public class User implements Serializable {
     @TableField(value = "phone")
     private String phone;
 
+    @TableLogic
+    private  byte status;
     /**
      * 注册邮箱
      */
@@ -44,8 +44,13 @@ public class User implements Serializable {
     @TableField(value = "updated")
     private Date updated;
 
+    private  String salt;
+
     @TableField(value = "role_id")
     private Long roleId;
+
+    @Version
+    private Integer version;
 
     private static final long serialVersionUID = 1L;
 

@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration>
 
-    <property name="log.path" value="F:/spring-boot-examples/spring-boot-log/src/main/resources/static" />
+    <property name="log.path" value="F:/spring-boot-examples/spring-boot-log/src/main/resources/static"/>
 
     <!-- 彩色日志 -->
     <!-- 彩色日志依赖的渲染类 -->
-    <conversionRule conversionWord="clr" converterClass="org.springframework.boot.logging.logback.ColorConverter" />
-    <conversionRule conversionWord="wex" converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter" />
-    <conversionRule conversionWord="wEx" converterClass="org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter" />
-    <!-- 彩色日志格式 -->
-    <property name="CONSOLE_LOG_PATTERN" value="${CONSOLE_LOG_PATTERN:-%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"/>
+    <conversionRule conversionWord="clr" converterClass="org.springframework.boot.logging.logback.ColorConverter"/>
+    <conversionRule conversionWord="wex"
+                    converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter"/>
+    <conversionRule conversionWord="wEx"
+                    converterClass="org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter"/>
+    <!-- 彩色日志格式  定义的变量在后面进行引用-->
+    <property name="CONSOLE_LOG_PATTERN"
+              value="%yellow(%date{yyyy-MM-dd HH:mm:ss}) |%highlight(%-5level) |%blue(%thread) |%blue(%file:%line) |%green(%logger) |%cyan(%msg%n)"/>
+    <!--              value="${CONSOLE_LOG_PATTERN:-%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(-&#45;&#45;){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"/>-->
 
 
     <appender name="consoleApp" class="ch.qos.logback.core.ConsoleAppender">
@@ -18,13 +22,20 @@
                 %date{yyyy-MM-dd HH:mm:ss.SSS} %-5level[%thread]%logger{56}.%method:%L -%msg%n
             </pattern>
         </layout>
+        <encoder>
+            <pattern>
+                ${CONSOLE_LOG_PATTERN}
+            </pattern>
+            <charset>UTF-8</charset>
+        </encoder>
     </appender>
 
     <appender name="fileInfoApp" class="ch.qos.logback.core.rolling.RollingFileAppender">
 
         <!-- 正在记录的日志文件的路径及文件名 -->
-<!--        <file>${log.path}/log_info.log</file>-->
+        <file>${log.path}/log_info.log</file>
 
+        <!--   过滤接受的级别，以下配置只接受info，拒绝其他-->
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>info</level>
             <onMatch>ACCEPT</onMatch>
@@ -36,17 +47,16 @@
             </pattern>
             <charset>UTF-8</charset> <!-- 此处设置字符集 -->
         </encoder>
-        <!-- 滚动策略 -->
+        <!-- 滚动策略 日志太大影响性能-->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 
-            <!-- 每天日志归档路径以及格式 -->
+            <!-- 每天日志归档路径以及格式  当${log.path}/log_info.log 满了以后，复制到，${log.path}/info/log-info-2019.08.10.0.log，，${log.path}/log_info.log 再满了只是i+1 -->
             <fileNamePattern>${log.path}/info/log-info-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <!-- 路径 -->
-            <fileNamePattern></fileNamePattern>
 
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <maxFileSize>100MB</maxFileSize>
             </timeBasedFileNamingAndTriggeringPolicy>
+
             <!--日志文件保留天数-->
             <maxHistory>15</maxHistory>
 
@@ -55,7 +65,7 @@
 
     <appender name="fileErrorApp" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <!-- 正在记录的日志文件的路径及文件名 -->
-<!--        <file>${log.path}/log_info.log</file>-->
+        <!--        <file>${log.path}/log_info.log</file>-->
 
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>ERROR</level>
@@ -84,7 +94,7 @@
     </appender>
 
 
-    <root level="INFO">
+    <root level="debug">
         <appender-ref ref="consoleApp"/>
         <appender-ref ref="fileInfoApp"/>
         <appender-ref ref="fileErrorApp"/>
@@ -93,17 +103,28 @@
 
     <!--开发环境:打印控制台-->
 <!--    <springProfile name="dev">-->
+
+<!--        &lt;!&ndash;        在com.nmys.view包下的日志都要打印debug级别的日志&ndash;&gt;-->
 <!--        <logger name="com.nmys.view" level="debug"/>-->
+
+<!--        &lt;!&ndash;        全局日志&ndash;&gt;-->
+<!--        <root level="info">-->
+<!--            &lt;!&ndash;            只控制台要打印&ndash;&gt;-->
+<!--            <appender-ref ref="CONSOLE"/>-->
+<!--            &lt;!&ndash;            <appender-ref ref="DEBUG_FILE"/>&ndash;&gt;-->
+<!--            &lt;!&ndash;            <appender-ref ref="INFO_FILE"/>&ndash;&gt;-->
+<!--            &lt;!&ndash;            <appender-ref ref="ERROR_FILE"/>&ndash;&gt;-->
+<!--            &lt;!&ndash;            <appender-ref ref="WARN_FILE"/>&ndash;&gt;-->
+<!--        </root>-->
 <!--    </springProfile>-->
 
-    <!--生产环境:输出到文件-->
-    <!--<springProfile name="pro">-->
-    <!--<root level="info">-->
-    <!--<appender-ref ref="CONSOLE" />-->
-    <!--<appender-ref ref="DEBUG_FILE" />-->
-    <!--<appender-ref ref="INFO_FILE" />-->
-    <!--<appender-ref ref="ERROR_FILE" />-->
-    <!--<appender-ref ref="WARN_FILE" />-->
-    <!--</root>-->
-    <!--</springProfile>-->
+<!--    &lt;!&ndash;生产环境:输出到文件&ndash;&gt;-->
+<!--    <springProfile name="pro">-->
+
+<!--        <logger name="com.nmys.view" level="warn"/>-->
+<!--        <root level="info">-->
+<!--            <appender-ref ref="ERROR_FILE"/>-->
+<!--            <appender-ref ref="WARN_FILE"/>-->
+<!--        </root>-->
+<!--    </springProfile>-->
 </configuration>

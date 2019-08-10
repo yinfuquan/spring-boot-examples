@@ -1,5 +1,8 @@
 package com.yin.springboot.mybatis.plus.config;
 
+import com.baomidou.mybatisplus.core.injector.ISqlInjector;
+import com.baomidou.mybatisplus.extension.injector.LogicSqlInjector;
+import com.baomidou.mybatisplus.extension.plugins.OptimisticLockerInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.PerformanceInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.pagination.optimize.JsqlParserCountOptimize;
@@ -34,5 +37,19 @@ public class MyBatisConfig {
         performanceInterceptor.setFormat(true);
         performanceInterceptor.setMaxTime(200);
         return performanceInterceptor;
+    }
+    /**
+     * 逻辑删除
+     */
+    @Bean
+    public ISqlInjector sqlInjector(){
+        return  new LogicSqlInjector();
+    }
+    /**
+     * 乐观锁
+     */
+    @Bean
+    public OptimisticLockerInterceptor optimisticLockerInterceptor() {
+        return new OptimisticLockerInterceptor();
     }
 }

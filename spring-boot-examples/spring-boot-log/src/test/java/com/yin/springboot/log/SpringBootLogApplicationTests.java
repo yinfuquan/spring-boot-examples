@@ -15,6 +15,8 @@ public class SpringBootLogApplicationTests {
     public void contextLoads() {
 
         log.error("name:{},age:{}","yin","20");
+        log.info("info");
+        log.debug("debug");
     }
 
 }
