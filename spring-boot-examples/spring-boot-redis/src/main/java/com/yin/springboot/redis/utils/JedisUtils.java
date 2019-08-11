@@ -22,6 +22,7 @@ public class JedisUtils implements ApplicationContextAware {
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+       JedisPool jedisPool= (JedisPool) applicationContext.getBean("redisPoolFactory");
         JEDIS = ((JedisPool) applicationContext.getBean("redisPoolFactory")).getResource();
     }
 

@@ -120,10 +120,12 @@ public class SpringBootMybatisPlusApplicationTests {
     }
 
     @Test
-    public  void  testobject(){
+    public  void  testobject() throws InterruptedException {
         List<Object> objects = userMapper.selectObjs(null);
 
         System.out.println(objects.toString());
+
+        Thread.sleep(10*1000);
     }
 
     @Test

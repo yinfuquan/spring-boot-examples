@@ -17,7 +17,7 @@ import lombok.Data;
 
 @ApiModel("用户实体")
 public class User {
-    @ApiModelProperty("na")
+    @ApiModelProperty(value = "na",example = "yin fu quan")
     String name;
     @ApiModelProperty("ag")
     String age;

@@ -20,6 +20,9 @@ import org.springframework.web.bind.annotation.RestController;
 @Api(tags = "用户相关请求")
 @RestController
 public class SwaggerCtl {
+
+
+
 @ApiOperation("测试")
 @ApiImplicitParams({
         @ApiImplicitParam(name = "id", value = "页码", required = true, dataType = "string", paramType = "path",defaultValue = "123456")
